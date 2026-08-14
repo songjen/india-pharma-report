@@ -273,7 +273,11 @@
       .filter(function (f) { return /\.md$/i.test(f.name); })
       .map(function (f) {
         var m = f.name.match(/(\d{8})\.md$/);
-        return { name: f.name, date: m ? m[1] : "", url: f.download_url || f.html_url };
+        return {
+          name: f.name,
+          date: m ? m[1] : "",
+          url: "viewer.html?file=" + encodeURIComponent(f.name)
+        };
       })
       .sort(function (a, b) { return b.date.localeCompare(a.date); });
 

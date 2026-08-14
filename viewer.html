@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>印度医药日报 | 查看</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f6f8fa;
+    color: #24292f;
+  }
+  .topbar {
+    background: #fff; border-bottom: 1px solid #d8dee4;
+    padding: 12px 24px; display: flex; align-items: center; gap: 14px;
+    position: sticky; top: 0; z-index: 10;
+  }
+  .topbar a { text-decoration: none; color: #57606a; font-size: 14px; font-weight: 600; }
+  .topbar a:hover { color: #c00; }
+  .topbar .title { font-size: 15px; font-weight: 800; color: #1f2328; }
+  .topbar .spacer { flex: 1; }
+
+  .markdown-body {
+    max-width: 920px;
+    margin: 30px auto 60px;
+    background: #fff;
+    border: 1px solid #d8dee4;
+    border-radius: 10px;
+    padding: 40px 48px;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+  /* GitHub 风格 Markdown */
+  .markdown-body h1, .markdown-body h2, .markdown-body h3 { margin: 1.2em 0 .5em; font-weight: 800; line-height: 1.3; }
+  .markdown-body h1 { font-size: 1.9em; border-bottom: 1px solid #d8dee4; padding-bottom: .3em; }
+  .markdown-body h2 { font-size: 1.45em; border-bottom: 1px solid #eaeef2; padding-bottom: .25em; }
+  .markdown-body h3 { font-size: 1.15em; }
+  .markdown-body p { margin: .6em 0; }
+  .markdown-body blockquote {
+    border-left: 4px solid #c00; margin: .8em 0; padding: .4em 1em;
+    color: #57606a; background: #fff8f8; border-radius: 0 6px 6px 0;
+  }
+  .markdown-body code {
+    background: #f0f1f3; padding: .15em .4em; border-radius: 4px;
+    font-size: .9em; font-family: "SFMono-Regular", Consolas, monospace;
+  }
+  .markdown-body pre {
+    background: #f6f8fa; border: 1px solid #d8dee4; border-radius: 8px;
+    padding: 14px 16px; overflow-x: auto; margin: .8em 0;
+  }
+  .markdown-body pre code { background: none; padding: 0; }
+  .markdown-body table {
+    border-collapse: collapse; width: 100%; margin: .9em 0;
+    display: block; overflow-x: auto;
+  }
+  .markdown-body th, .markdown-body td {
+    border: 1px solid #d8dee4; padding: 7px 13px; text-align: left;
+    font-size: 14px;
+  }
+  .markdown-body th { background: #f6f8fa; font-weight: 700; }
+  .markdown-body tr:nth-child(2n) td { background: #fafbfc; }
+  .markdown-body a { color: #c00; text-decoration: none; }
+  .markdown-body a:hover { text-decoration: underline; }
+  .markdown-body ul, .markdown-body ol { margin: .6em 0 .6em 1.6em; }
+  .markdown-body li { margin: .25em 0; }
+  .markdown-body hr { border: none; border-top: 1px solid #d8dee4; margin: 1.4em 0; }
+  .markdown-body strong { font-weight: 800; }
+
+  .errbox {
+    max-width: 920px; margin: 30px auto; background: #fff5f5;
+    border: 1px solid #ffd6d6; color: #a30000; border-radius: 10px;
+    padding: 20px 28px; font-size: 14px;
+  }
+  .loading { text-align: center; padding: 80px 0; color: #57606a; font-size: 15px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="index.html">🏠 返回首页</a>
+  <span class="title" id="pageTitle">印度医药日报</span>
+  <div class="spacer"></div>
+  <a href="reports/" target="_blank">📂 reports/</a>
+</div>
+
+<div id="loading" class="loading">⏳ 加载中…</div>
+<div id="errbox" class="errbox" style="display:none"></div>
+<article class="markdown-body" id="content" style="display:none"></article>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var file = params.get("file") || "";
+  var REPO = "songjen/india-pharma-report";
+  var contentEl = document.getElementById("content");
+  var errEl = document.getElementById("errbox");
+  var loadingEl = document.getElementById("loading");
+
+  if (!file) {
+    errEl.style.display = "block";
+    errEl.innerHTML = "⚠️ 缺少参数：请在链接后加 <code>?file=日报文件名.md</code><br><a href='reports/' style='color:#c00'>前往 reports/ 目录查看全部日报</a>";
+    loadingEl.style.display = "none";
+    return;
+  }
+
+  // 显示日期于标题
+  var m = file.match(/(\d{8})\.md$/);
+  if (m) {
+    var d = m[1];
+    document.getElementById("pageTitle").textContent =
+      "印度医药日报 | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
+    document.title = "印度医药日报 | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
+  }
+
+  var RAW = "https://raw.githubusercontent.com/" + REPO + "/main/reports/" + encodeURIComponent(file);
+
+  fetch(RAW)
+    .then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.text();
+    })
+    .then(function (text) {
+      var html;
+      if (typeof marked !== "undefined") {
+        html = marked.parse(text);
+      } else {
+        // marked.js 加载失败：降级为纯文本
+        html = "<pre style='white-space:pre-wrap;font-family:inherit'>" +
+               text.replace(/&/g,"&amp;").replace(/</g,"&lt;") + "</pre>";
+      }
+      contentEl.innerHTML = html;
+      loadingEl.style.display = "none";
+      contentEl.style.display = "block";
+    })
+    .catch(function (e) {
+      loadingEl.style.display = "none";
+      errEl.style.display = "block";
+      errEl.innerHTML = "⚠️ 加载失败：" + e.message + "<br>" +
+        "可直接访问原始文件：<a href='" + RAW + "' style='color:#c00'>" + file + "</a>";
+    });
+})();
+</script>
+</body>
+</html>
