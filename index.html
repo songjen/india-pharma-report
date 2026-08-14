@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>印度医药日报 | India Pharma Daily</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f7f8fa;
+    color: #24292f;
+    min-height: 100vh;
+  }
+  .container { max-width: 1060px; margin: 0 auto; padding: 28px 20px 60px; }
+
+  /* 头部 */
+  header { text-align: center; margin-bottom: 30px; }
+  header h1 {
+    font-size: 30px; font-weight: 800; letter-spacing: 1px;
+    color: #1f2328; margin-bottom: 6px;
+  }
+  header h1 .en { font-size: 15px; font-weight: 500; color: #6e7781; margin-left: 8px; }
+  header .sub {
+    font-size: 13.5px; color: #57606a; line-height: 1.8;
+    max-width: 760px; margin: 0 auto;
+  }
+  header .sub b { color: #c00; }
+
+  /* 主体两栏布局 */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 800px) {
+    .layout { grid-template-columns: 1fr; }
+  }
+
+  /* 左栏：今日日报大卡片 */
+  .today-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 34px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #c00;
+  }
+  .today-card::before {
+    content: "";
+    position: absolute; top: 0; left: 0; right: 0; height: 6px;
+    background: linear-gradient(90deg, #c00, #ff6a3d);
+  }
+  .today-badge {
+    display: inline-block;
+    background: #c00; color: #fff;
+    font-size: 22px; font-weight: 900;
+    padding: 8px 26px; border-radius: 999px;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 10px rgba(204,0,0,.3);
+  }
+  .today-date {
+    font-size: 38px; font-weight: 900; color: #c00;
+    margin: 8px 0 6px; letter-spacing: 1px;
+  }
+  .today-desc { font-size: 13px; color: #57606a; margin-bottom: 22px; }
+  .today-link {
+    display: inline-block;
+    background: #c00; color: #fff;
+    font-size: 18px; font-weight: 800;
+    padding: 14px 44px; border-radius: 10px;
+    text-decoration: none; letter-spacing: 2px;
+    transition: transform .15s, box-shadow .15s, background .15s;
+    box-shadow: 0 4px 14px rgba(204,0,0,.35);
+    animation: pulse 2s infinite;
+  }
+  .today-link:hover {
+    background: #a30000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(204,0,0,.45);
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 14px rgba(204,0,0,.35); }
+    50% { box-shadow: 0 4px 24px rgba(204,0,0,.65); }
+  }
+  .today-tip { font-size: 12px; color: #8c959f; margin-top: 14px; }
+
+  /* 右栏：历史日报 */
+  .history-panel {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 26px 26px 20px;
+  }
+  .history-panel h2 {
+    font-size: 19px; font-weight: 800; color: #1f2328;
+    border-bottom: 2px solid #f0f1f3;
+    padding-bottom: 12px; margin-bottom: 16px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .history-panel h2 .badge {
+    font-size: 12px; background: #eef0f2; color: #57606a;
+    padding: 2px 10px; border-radius: 999px; font-weight: 600;
+  }
+
+  .filter { display: flex; gap: 10px; align-items: center; margin-bottom: 18px; flex-wrap: wrap; }
+  .filter label { font-size: 14px; font-weight: 600; color: #57606a; white-space: nowrap; }
+  .filter select {
+    flex: 1; min-width: 150px;
+    padding: 9px 12px; border: 1.5px solid #d0d7de; border-radius: 8px;
+    font-size: 14px; color: #24292f; background: #fbfcfe; outline: none;
+  }
+  .filter select:focus { border-color: #c00; }
+  .filter button {
+    background: #1f2328; color: #fff; border: none;
+    padding: 9px 18px; border-radius: 8px; font-size: 14px; font-weight: 700;
+    cursor: pointer; transition: background .15s;
+    white-space: nowrap;
+  }
+  .filter button:hover { background: #32383f; }
+
+  .history-list { list-style: none; max-height: 300px; overflow-y: auto; }
+  .history-list li { margin-bottom: 4px; }
+  .history-list a {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 12px; border-radius: 8px; text-decoration: none;
+    color: #24292f; font-size: 14px;
+    transition: background .12s, color .12s;
+    border: 1px solid transparent;
+  }
+  .history-list a:hover { background: #fff5f5; border-color: #ffd6d6; color: #c00; }
+  .history-list a .d { font-weight: 700; }
+  .history-list a .arrow { color: #8c959f; font-size: 15px; }
+
+  .empty { color: #8c959f; font-size: 13px; padding: 10px 4px; }
+  .error {
+    background: #fff5f5; border: 1px solid #ffd6d6; color: #a30000;
+    padding: 12px 14px; border-radius: 8px; font-size: 13px; margin-top: 8px;
+  }
+
+  /* 重点追踪客户 */
+  .clients-panel {
+    background: #fff; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    padding: 24px 26px; margin-top: 24px;
+  }
+  .clients-panel h2 {
+    font-size: 17px; font-weight: 800; color: #1f2328; margin-bottom: 12px;
+  }
+  .clients-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .clients-tags span {
+    background: #f0f1f3; color: #424a53; font-size: 12.5px; font-weight: 600;
+    padding: 5px 12px; border-radius: 999px;
+  }
+
+  footer {
+    text-align: center; margin-top: 28px;
+    font-size: 12px; color: #8c959f; line-height: 1.8;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>🇮🇳 印度医药日报<span class="en">India Pharma Daily</span></h1>
+    <p class="sub">
+      政府医药政策（制药司 / CDSCO / 商工部MOCI / 化学品部 / DGTR 等）· 医药行业动态（ET Pharma / Express Pharma / USFDA 等）· 25 家重点客户动态<br>
+      每日 07:30 自动生成 · 金额按实时汇率换算美元 · 每条新闻附可点击来源链接
+    </p>
+  </header>
+
+  <div class="layout">
+
+    <!-- 左栏：今日日报（红色大卡片，醒目可点击） -->
+    <section class="today-card">
+      <div class="today-badge">今日日报</div>
+      <div class="today-date" id="todayDate">加载中…</div>
+      <div class="today-desc">最新一期 · 点击查看完整内容</div>
+      <a class="today-link" id="todayLink" href="reports/" target="_blank">👉 点击进入今日日报</a>
+      <div class="today-tip">点击上方红色按钮查看最新一期完整日报</div>
+    </section>
+
+    <!-- 右栏：历史日报 + 日期筛选 -->
+    <section class="history-panel">
+      <h2>📅 历史日报 <span class="badge" id="totalCount">—</span></h2>
+      <div class="filter">
+        <label for="dateSelect">日期筛选：</label>
+        <select id="dateSelect">
+          <option value="">加载中…</option>
+        </select>
+        <button id="openBtn" type="button" disabled>打开</button>
+      </div>
+      <ul class="history-list" id="historyList"></ul>
+      <div class="empty" id="emptyTip" style="display:none">暂无历史日报</div>
+      <div class="error" id="errBox" style="display:none"></div>
+    </section>
+
+  </div>
+
+  <!-- 重点追踪客户 -->
+  <section class="clients-panel">
+    <h2>🎯 重点追踪客户（25 家）</h2>
+    <div class="clients-tags">
+      <span>ALEMBIC PHARMA</span><span>OTSUKA CHEMICAL</span><span>AQUATIC REMEDIES</span>
+      <span>VIRCHOW PETRO CHEMICAL</span><span>AUROBINDO</span><span>PRATISTHA PHARMA</span>
+      <span>ANUH PHARMA</span><span>APITORIA PHARMA</span><span>SYNTHIMED LABS</span>
+      <span>LUPIN</span><span>SHRIYA PHARMA SURGICAL</span><span>ENVEE DRUGS</span>
+      <span>PENAM LABORATORIES</span><span>STERILE INDIA</span><span>SYSCHEM INDIA</span>
+      <span>LABORATE PHARMACEUTICALS INDIA</span><span>COVALENT LABORATORIES</span>
+      <span>MAXCURE NUTRAVEDICS</span><span>MAHIMA LIFESCIENCE</span><span>INNOVA CAPTAB</span>
+      <span>G C CHEMIE PHARMIE</span><span>MEDICEF PHARMA</span><span>FARMACHEM LIFE</span>
+      <span>DALAS BIOTECH</span><span>VITAL LABORATORIES</span>
+    </div>
+  </section>
+
+  <footer>
+    本页面由 <b>india-pharma-daily</b> 技能自动维护 · 日报存档于 <a href="reports/" style="color:#57606a">reports/</a> 目录<br>
+    GitHub 仓库：<a href="https://github.com/songjen/india-pharma-report" style="color:#57606a">songjen/india-pharma-report</a>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  const REPO = "songjen/india-pharma-report";
+  const API = "https://api.github.com/repos/" + REPO + "/contents/reports";
+  const select = document.getElementById("dateSelect");
+  const openBtn = document.getElementById("openBtn");
+  const listEl = document.getElementById("historyList");
+  const emptyTip = document.getElementById("emptyTip");
+  const errBox = document.getElementById("errBox");
+  const todayDate = document.getElementById("todayDate");
+  const todayLink = document.getElementById("todayLink");
+  const totalCount = document.getElementById("totalCount");
+
+  function fmtDate(ymd) {
+    if (!ymd || ymd.length !== 8) return ymd || "";
+    return ymd.slice(0, 4) + "-" + ymd.slice(4, 6) + "-" + ymd.slice(6, 8);
+  }
+
+  function showErr(msg) {
+    errBox.style.display = "block";
+    errBox.textContent = "⚠️ " + msg;
+  }
+
+  async function load() {
+    let files;
+    try {
+      const res = await fetch(API, { headers: { "Accept": "application/vnd.github+json" } });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      if (!Array.isArray(data)) throw new Error("响应格式异常");
+      files = data;
+    } catch (e) {
+      showErr("历史日报列表加载失败（" + e.message + "），请直接访问 " +
+              '<a href="reports/" style="color:#c00">reports/ 目录</a> 查看全部日报。');
+      todayLink.href = "reports/";
+      select.innerHTML = '<option value="">加载失败</option>';
+      return;
+    }
+
+    const items = files
+      .filter(function (f) { return /\.md$/i.test(f.name); })
+      .map(function (f) {
+        var m = f.name.match(/(\d{8})\.md$/);
+        return { name: f.name, date: m ? m[1] : "", url: f.download_url || f.html_url };
+      })
+      .sort(function (a, b) { return b.date.localeCompare(a.date); });
+
+    if (!items.length) {
+      emptyTip.style.display = "block";
+      totalCount.textContent = "0";
+      return;
+    }
+
+    totalCount.textContent = items.length + " 期";
+    const today = items[0];
+
+    // 今日日报（最新一期）
+    todayDate.textContent = fmtDate(today.date);
+    todayLink.href = today.url;
+
+    // 历史日报下拉（排除今日）
+    const options = items.slice(1);
+    if (!options.length) {
+      select.innerHTML = '<option value="">暂无历史日报</option>';
+      emptyTip.style.display = "block";
+    } else {
+      select.innerHTML = '<option value="">请选择日期…</option>';
+      options.forEach(function (it) {
+        var opt = document.createElement("option");
+        opt.value = it.url;
+        opt.textContent = fmtDate(it.date) + "（" + it.name.replace(/\.md$/, "") + "）";
+        select.appendChild(opt);
+      });
+      select.disabled = false;
+      openBtn.disabled = false;
+    }
+
+    // 历史日报列表（全部，倒序）
+    items.forEach(function (it) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = it.url;
+      a.target = "_blank";
+      var d = document.createElement("span");
+      d.className = "d";
+      d.textContent = fmtDate(it.date);
+      var arrow = document.createElement("span");
+      arrow.className = "arrow";
+      arrow.textContent = "→";
+      a.appendChild(d);
+      a.appendChild(arrow);
+      li.appendChild(a);
+      listEl.appendChild(li);
+    });
+  }
+
+  openBtn.addEventListener("click", function () {
+    var v = select.value;
+    if (v) window.open(v, "_blank");
+  });
+  select.addEventListener("change", function () {
+    if (select.value) openBtn.disabled = false;
+  });
+
+  load();
+})();
+</script>
+</body>
+</html>
