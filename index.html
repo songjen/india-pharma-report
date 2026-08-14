@@ -27,12 +27,12 @@
   }
   header .sub b { color: #c00; }
 
-  /* 主体两栏布局 */
+  /* 主体两栏布局（等宽等高） */
   .layout {
     display: grid;
-    grid-template-columns: 1fr 1.15fr;
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
-    align-items: start;
+    align-items: stretch;
   }
   @media (max-width: 800px) {
     .layout { grid-template-columns: 1fr; }
@@ -48,6 +48,11 @@
     position: relative;
     overflow: hidden;
     border: 2px solid #c00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 340px;
   }
   .today-card::before {
     content: "";
@@ -95,6 +100,7 @@
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0,0,0,.08);
     padding: 26px 26px 20px;
+    min-height: 340px;
   }
   .history-panel h2 {
     font-size: 19px; font-weight: 800; color: #1f2328;
