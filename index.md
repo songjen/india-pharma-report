@@ -1,7 +1,7 @@
 # 🇮🇳 印度医药日报档案馆（India Pharma Daily Archive）
 
 > 由 **india-pharma-daily** 技能每日自动生成（北京时间 07:30 / 印度时间 05:00 盘前）
-> 覆盖：印度官方政策（PIB/财政部/RBI/商工部）+ 医药行业动态（制药司/CDSCO/USFDA/API出口）+ 11 只重点医药股行情
+> 覆盖：政府医药政策（制药司/CDSCO/商工部/化学品部/DGTR等）+ 医药行业动态（ET Pharma/Express Pharma/USFDA等）+ 25 家重点客户动态
 
 ## 📅 历史日报
 
@@ -9,10 +9,10 @@
 |---|---|
 | 2026-08-14 | [印度医药日报_20260814.md](reports/印度医药日报_20260814.md) |
 
-## 📈 重点追踪股票
+## 📈 重点追踪客户
 
-SUNPHARMA · AUROPHARMA · DRREDDY · CIPLA · LUPIN · DIVISLAB · ORCHPHARMA · WOCKPHARMA · LAURUSLABS · GRANULES · BIOCON
+ALEMBIC PHARMA · OTSUKA CHEMICAL · AQUATIC REMEDIES · VIRCHOW PETRO CHEMICAL · AUROBINDO · PRATISTHA PHARMA · ANUH PHARMA · APITORIA PHARMA · SYNTHIMED LABS · LUPIN · SHRIYA PHARMA SURGICAL · ENVEE DRUGS · PENAM LABORATORIES · STERILE INDIA · SYSCHEM INDIA · LABORATE PHARMACEUTICALS INDIA · COVALENT LABORATORIES · MAXCURE NUTRAVEDICS · MAHIMA LIFESCIENCE · INNOVA CAPTAB · G C CHEMIE PHARMIE · MEDICEF PHARMA · FARMACHEM LIFE · DALAS BIOTECH · VITAL LABORATORIES
 
 ---
 
-*本页由 index.md 自动维护 | 数据基准：印度 NSE 交易日*
+*本页由 index.md 自动维护 | 数据基准：印度医药行业每日动态*
