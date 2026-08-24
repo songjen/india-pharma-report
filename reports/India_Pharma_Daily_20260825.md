@@ -1,0 +1,48 @@
+# India Pharma Daily | 2026-08-25
+
+> **Exchange Rate**: As of 2026-08-25 07:25 IST, 1 USD ≈ ₹95.76 (Moneycontrol reference ₹95.74)
+
+---
+
+## 1. Government Pharma Policy
+
+**【2026-08-24】CBN and PHARMEXCIL Sign MoU to Accelerate Controlled Drug Export Authorisations** — The Central Bureau of Narcotics (CBN, Dept. of Revenue, Ministry of Finance) and the Pharmaceuticals Export Promotion Council of India (PHARMEXCIL, Ministry of Commerce & Industry) signed a Memorandum of Understanding at CBN Headquarters in Gwalior, covering four areas: ① development of a Voluntary Code of Conduct (VCC) in consultation with industry (voluntary and non-binding, no additional burden); ② identifying operational bottlenecks and streamlining legitimate export procedures for compliant exporters; ③ joint workshops, seminars and awareness campaigns for exporters in coordination with CDSCO and Customs; ④ information sharing subject to law and confidentiality (industry to nominate contact persons). A six-month action plan was announced to reduce dwell time for export authorisations of narcotic drugs, psychotropic substances and precursor chemicals while preventing diversion into illicit channels. India exported pharmaceutical products worth approximately US$30.5 billion in 2024-25 to 191 countries, with around half going to highly regulated markets. — Sources: [PIB/PHARMEXCIL release](https://buddhist-times.com/2026/08/24/central-bureau-of-narcotics-cbn-and-pharmexcil-sign-memorandum-of-understanding-to-boost-legitimate-pharmaceutical-exports-and-strengthen-regulatory-cooperation) · [ABC Live analysis](https://abclive.in/2026/08/25/cbn-pharmexcil-mou-pharma-export-critical-analysis)
+
+**【2026-08-24】Draft Drugs, Medical Devices & Cosmetics Bill 2026 Expands "Compounding" — Minor Quality Lapses Settleable by Fines Without Criminal Prosecution** — According to Financial Express, the draft Bill would allow six categories of offences to be compounded (settled by paying a prescribed amount, capped at the maximum fine for the offence, upon approval by an authorised officer), ending court proceedings: specified violations involving not-of-standard-quality or misbranded drugs; failure to provide medical treatment/compensation to clinical trial participants; specified violations involving adulterated medical devices; devices manufactured/sold/distributed without required licence; wilfully obstructing a medical devices inspector; and failure to provide treatment/compensation during device investigations. However, serious offences — adulterated or spurious drugs likely to cause death or grievous hurt — retain imprisonment of at least 10 years (7 years for other spurious drug offences), extendable to life, with fines, and dedicated special courts; repeat offences attract enhanced punishment. The Bill, which would replace the Drugs and Cosmetics Act, 1940, has not yet been introduced in Parliament. — Source: [Financial Express](https://www.financialexpress.com/business/news/drugmakers-may-get-relief-from-criminal-proceedings-for-minor-quality-lapses/4324467)
+
+---
+
+## 2. Pharma Industry News
+
+**【2026-08-22】Caplin Steriles (Caplin Point Subsidiary) Gummidipoondi Unit Receives USFDA Form 483 with 10 Observations** — The US FDA conducted an unannounced inspection of the injectable and ophthalmic manufacturing facility at Gummidipoondi, Tamil Nadu, from August 13-21, 2026, and issued a Form 483 with 10 observations. The company clarified all observations are strictly procedural, none pertain to data integrity, and there are no repeat observations; it will submit a corrective action response within the stipulated timeline. — Sources: [Indian Pharma Post](https://www.indianpharmapost.com/news/caplin-steriles-gets-us-fda-form-483-with-10-observations-at-gummidipoondi-unit-21511) · [Business Today](https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-ril-horizon-parks-meesho-lalithaa-bank-of-baroda-lenskart-power-grid-550816-2026-08-24)
+
+**【2026-08-24】Choksi Laboratories' Indore Central Laboratory Receives 4 Observations from USFDA Inspection** — The US FDA inspected the company's central laboratory in Indore from August 17-20, 2026, and issued a Form 483 with four observations. Choksi Laboratories is a third-party pharmaceutical testing laboratory covering pharma and food testing. — Source: [Business Today](https://www.businesstoday.in/markets/stocks/story/top-stocks-in-news-ril-horizon-parks-meesho-lalithaa-bank-of-baroda-lenskart-power-grid-550816-2026-08-24)
+
+**【2026-08-24】South Korea's GC Biopharma's Rare Disease Drug Hunterase IV Gets CDSCO Approval** — GC Biopharma (formerly Green Cross) announced its Hunter syndrome (MPS II) treatment Hunterase IV received marketing authorisation from India's CDSCO, making India the 14th country of approval (Taiwan approved both IV and ICV formulations). Hunter syndrome is an X-linked lysosomal storage disorder, with ~70% of patients having CNS involvement. The company cited India's low treatment coverage and significant unmet need. — Source: [PR Newswire](https://www.prnewswire.com/news-releases/gc-biopharmas-hunter-syndrome-treatment-hunterase-receives-drug-approval-in-india-and-taiwan-302858064.html)
+
+**【2026-08-23】NCB to Run 24 Nationwide Anti-Drug Drives: Pharmacy Checks for Pharmaceutical Diversion from October** — Following the newly released National Vision Document for Narcotics Control 2026-29, the Narcotics Control Bureau (NCB) announced 24 fortnightly special drives over one year starting September: from October, it will jointly inspect medical stores and pharmacies with state/UT anti-narcotics task forces and local drug controllers to check diversion of pharmaceutical drugs; the first half of February 2027 will see awareness drives in chemical industries against precursor chemical diversion; other drives target absconding offenders, prisons, coastal areas and land/sea/air ports. — Source: [India Today/PTI](https://www.indiatoday.in/india/story/ncb-anti-drug-campaign-24-nationwide-drives-track-fugitives-inspect-pharmacies-ptag-2977938-2026-08-23)
+
+---
+
+## 3. Key Client Updates
+
+**【2026-08-24】Aurobindo's US Subsidiary Lannett Company (Seymour, IN) Receives 4 Observations in USFDA Routine Inspection** — Aurobindo Pharma disclosed that the US FDA conducted a routine inspection of its wholly owned step-down subsidiary Lannett Company LLC (Seymour, Indiana) from August 17-21, 2026, concluding with four observations, which the company said are procedural and will be addressed within the stipulated timeline. Earlier in the week (Aug 21), its peptide API subsidiary AuroPeptides' Telangana facility inspection concluded with only one observation (facility and equipment maintenance). Aurobindo's US compliance profile remains a "mixed bag": Raleigh VAI closure + AuroPeptides single observation, offset by the Eugia warning letter (Aug 14) and Lannett's four observations. — Sources: [ET](https://economictimes.com/industry/healthcare/biotech/pharmaceuticals/usfda-ends-inspection-of-aurobindo-pharma-arms-facility-with-4-observations/articleshow/133455672.cms) · [CNBC TV18](https://www.cnbctv18.com/market/stocks/aurobindo-pharma-share-price-us-fda-inspection-ends-with-one-observation-at-auropeptides-facility-19974568.htm) · [Livemint](https://www.livemint.com/market/stock-market-news/aurobindo-pharma-us-subsidiary-lannett-company-llc-faces-4-observations-from-the-usfda-11787552311921.html)
+
+---
+
+## 4. Risk Alerts
+
+- **Dense USFDA inspection period**: Within the past week, Natco (Vizag FDF, 4 observations), Aurobindo Lannett (4), Caplin Steriles (10) and Choksi Laboratories (4) have all received Form 483s, keeping GMP compliance pressure on Indian pharma elevated — watch for escalation to warning letters/import alerts (cf. Eugia precedent).
+- **US tariff threat on Indian generics persists**: The plan to levy 100% (2028) and 200% (2029) tariffs on imported generics is still on track; an RBI MPC member also flagged concentration risk in India's exports (including pharma) to the US. Export diversification (EU/EFTA/emerging markets) is a medium-term theme.
+- **Regulatory environment tightening on both ends**: The expanded chlorpheniramine+phenylephrine FDC restriction (effective Aug 19) and NCB pharmacy checks (from October) raise compliance costs at the distribution end; the new Drugs Bill, if enacted, offers compounding for minor lapses but imposes 7-10 year minimum imprisonment for counterfeit/adulterated drug offences.
+- **FX volatility**: USD/INR trading high in the ₹95.7-95.8 band this week — a weaker rupee boosts USD-denominated earnings of Indian API/formulation exporters but pressures dollar-priced import costs.
+
+---
+
+## 5. Tomorrow's Watchlist
+
+- **Symbiotec Pharmalab IPO subscription ongoing (Aug 24-27)**: Global leader in steroid/hormone APIs; secured ₹526.2 crore (~$55M) anchor backing on Aug 24. Watch subscription multiple, allotment on Aug 28 and listing on Sep 1.
+- **CBN-PHARMEXCIL MoU follow-through**: Track the Voluntary Code of Conduct draft and six-month action plan milestones — direct relevance for exporters of controlled (narcotic/psychotropic) substances.
+- **Drugs, Medical Devices & Cosmetics Bill 2026 consultations**: Within the 30-day objection window for the Aug 19 Schedule H1 draft rules (until mid-Sept), industry feedback on compounding and other provisions.
+- **Q1 FY27 earnings season wind-down**: Watch disclosures from mid/small-cap API and formulation companies (including names in the 25-client list).
+- **GC Biopharma Hunterase IV commercialisation in India**: Post-approval pricing and launch timeline; rare-disease drug access remains a hot topic.
