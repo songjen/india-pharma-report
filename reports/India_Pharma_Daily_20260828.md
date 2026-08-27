@@ -1,0 +1,44 @@
+# India Pharma Daily | 2026-08-28
+
+> FX rate at 2026-08-28 07:25 (real-time), 1 USD ≈ ₹95.45 (currency plugin; corroborated by CurrencyRate.Today 95.49)
+
+## 1. Government Pharma Policy
+
+**【2026-08-24】Delhi High Court Stays NPPA Demand Notice Against AstraZeneca India on Betaloc-50 Overpricing** — On August 24, the Delhi High Court stayed the operation of an NPPA demand notice dated July 27 (concerning enforcement of 2016 DPCO price ceilings), with the stay valid until the next hearing on February 10, 2027, conditional on AstraZeneca depositing 15% of the demanded amount with the court. NPPA alleged the company sold Betaloc-50 (Metoprolol 50mg) at MRP above the DPCO-2013 ceiling price and failed to implement the revised ceilings of 2016. A judicial test case for foreign pharma companies contesting NPPA pricing-enforcement demands. — Source: [Medical Dialogues](https://medicaldialogues.in/amp/news/industry/pharma/delhi-hc-stays-nppa-notice-against-astrazeneca-over-alleged-betaloc-50-overcharging-178128)
+
+**【2026-08-27】Gujarat Police Bust Multistate Counterfeit Drug Network; 3 Arrested (Fake Nifedipine SR Tablets)** — The Ahmedabad Crime Branch and state FDCA jointly dismantled a fake-medicine racket spanning Gujarat/Uttar Pradesh/Rajasthan, arresting three men and seizing multiple batches of counterfeit Nicardia Retard 10 (Nifedipine SR 10mg, Batch No. ACG25007) made to mimic J B Chemicals' genuine product. Counterfeit stock was distributed via Parshva Medical Agency (Paldi, Ahmedabad), sourced upstream from Lucknow. Regulatory takeaway: chronic-disease prescription medicines (hypertension) are a prime counterfeit target, with packaging nearly indistinguishable from genuine goods. — Source: [Moneycontrol](https://www.moneycontrol.com/city/gujarat-police-bust-multistate-fake-medicine-racket-3-held-over-counterfeit-bp-drug-article-14017165.html) · [Telangana Today](https://telanganatoday.com/three-arrested-in-gujarat-lucknow-counterfeit-drug-syndicate)
+
+## 2. Pharma Industry News
+
+**【2026-08-27】Symbiotec Pharmalab IPO Closes with ~71x Final Subscription; Allotment Today (Aug 28)** — India's steroid-hormone API leader Symbiotec's ₹1,757cr (~$184M) IPO closed on August 27 with final subscription of ~71x: QIB 172x, NII 73.5x, retail 12.6x, employees 15x. Upper price band ₹988/share; grey-market premium ~₹260-352 (26-36%). Allotment is finalized today (Aug 28), refunds/credits Aug 31, listing on NSE/BSE on September 1. — Source: [Kotak Neo](https://www.kotakneo.com/news/ipos/symbiotec-pharmalab-ipo-allotment-status-check-online) · [Lemonn](https://lemonn.co.in/blog/ipo/symbiotec-pharmalab-ipo-allotment-status)
+
+**【2026-08-26】India CRDMO Sector Growth Rebounds to 19% YoY in Q1FY27 (Jefferies)** — Per a Jefferies report, the 9 covered Indian CRDMO companies grew combined revenue 19% YoY in Q1FY27, the highest in seven quarters (vs 9% in the March 2026 quarter): Divi's CDMO +50% (validation batches for major projects), Laurus CDMO +76% (FY26 commercial molecule ramp), Piramal CDMO +19%, Sai Life CRO +24%. Divi's and Laurus hit all-time highs; Laurus +90% and Divi's +50% YTD FY27. — Source: [Business Standard](https://www.business-standard.com/markets/news/pharma-shares-shine-divi-s-laurus-hit-new-highs-zoom-up-to-91-in-fy27-126082600280_1.html)
+
+**【2026-08-27】Mankind Pharma Approves Voluntary Liquidation to Consolidate BSVL (Bharat Serums & Vaccines)** — On August 26, the board approved transferring the business of 96%-owned BSVL into the parent on a going-concern basis (the remaining 4% held via wholly owned Appian Properties will receive cash consideration at fair value). The consolidation aims to improve operational efficiency and cut compliance/governance costs; subject to regulatory approvals, BSVL will be dissolved with no change in the shareholding pattern. — Source: [Indian Pharma Post](https://www.indianpharmapost.com/news/mankind-pharma-to-consolidate-bsv-business-through-voluntary-liquidation-21581)
+
+**【2026-08-26】US Commerce Issues Preliminary Antidumping Duties on Indian Citric Acid (100%-152%)** — The US Department of Commerce preliminarily found citric acid and certain citrate salts from India sold at less than fair value: 151.73% for Daffodil Pharmachem (adverse facts available) and 100.21% for all others. Effective August 26, US CBP suspends liquidation and requires cash deposits; the final determination is postponed to no later than January 8, 2027. Citric acid is a key food/pharma excipient, so the high rates will hit Indian exports to the US. — Source: [Federal Register](https://www.federalregister.gov/d/2026-17418)
+
+**【2026-08-27】Senores Pharma Board Approves Mexico & Canada Subsidiaries** — On August 26, the board approved incorporating a 100%-owned subsidiary in Mexico and a ≥51%-held subsidiary in Canada, focused on pharma supply and distribution to expand into Latin America and North America, alongside integration of the ~₹91cr (~$9.5M) acquisition of Apnar Pharma (Jambusar, Gujarat plant with FDA/MHRA/Health Canada approvals) and five ANDAs. — Source: [Indian Pharma Post](https://www.indianpharmapost.com/news/senores-pharma-to-expand-global-presence-with-subsidiaries-in-mexico-canada-21580)
+
+## 3. Key Client Updates
+
+**【2026-08-24】Lupin Wins US Patent Litigation Over Kalydeco (ivacaftor Granules)** — On August 24, the US District Court for the District of Delaware ruled that Lupin's generic ivacaftor granules (~74% drug load) do not infringe any of the four Vertex patents asserted, rejecting both literal-infringement and doctrine-of-equivalents theories. Lupin is a first-to-file applicant with tentative FDA approval already in hand, clearing the key barrier to launch with potential 180-day exclusivity; Bernstein estimates $20-30M annual sales (~1.4-2.1% of Lupin's current US revenue). — Source: [Katten](https://katten.com/katten-secures-patent-infringement-victory-for-lupin-in-delaware-litigation-against-vertex-pharmaceuticals) · [Moneycontrol](https://www.moneycontrol.com/news/business/markets/lupin-shares-recover-from-six-month-low-after-1-8-fall-citi-downgrades-stock-to-sell-14016748.html)
+
+**【2026-08-27】Citi Downgrades Lupin to 'Sell', Target Cut 19%; Bernstein Stays 'Outperform'** — Citi downgraded Lupin from 'Buy' to 'Sell' and cut its target price to ₹2,050 (~$21.5) from ₹2,540, citing weakening US base-business momentum and a pipeline insufficient to offset declines in gJynarque (Tolvaptan; ~35% of US sales and 45% of EBITDA) and gMyrbetriq; US sales are seen falling from $1.3B in FY26 to $975M by FY29, with EBITDA margin slipping from 30% to 20%. Bernstein maintains 'Outperform' (target ₹2,707), pointing to the August 24 Kalydeco win clearing the first-to-file launch path. — Source: [Moneycontrol](https://www.moneycontrol.com/news/business/markets/lupin-shares-recover-from-six-month-low-after-1-8-fall-citi-downgrades-stock-to-sell-14016748.html) · [Informist](https://www.informistmedia.com/EquityWire/58511/)
+
+(No updates for the other 23 key clients today)
+
+## 4. Risk Alerts
+
+- **Cipla Pithampur 7-observation Form 483 — market reaction**: On Aug 27, shares fell as much as 3.1% intraday, wiping out ~₹2,800cr (~$293M) in market cap in a session; Cipla must respond within 15 days, and inadequate remediation risks escalation to a Warning Letter/import alert (the 483 itself was covered in the Aug 26 daily; this is the market update).
+- **IPC 'near-miss' pharmacovigilance framework** (reported by Livemint et al.): the Indian Pharmacopoeia Commission plans a national framework to log 'near-miss' medication errors and integrate data with the CDSCO SUGAM portal for targeted clinical alerts; could drive future packaging/labelling rules — publication date pending official confirmation.
+- **Goyal Japan delegation follow-up**: reports during the Aug 25-28 visit suggest India promised regulatory changes within two months to address Japanese concerns (source pending official confirmation); progress on India-Japan certification mutual recognition would benefit API/formulation exports to Japan, while PMDA barriers otherwise persist.
+- **US Section 232 pharma tariffs**: the generics/biosimilars exclusion remains under a one-year review window, keeping India's CRDMO and generics sector under policy uncertainty (a key variable for API export environment).
+
+## 5. Tomorrow's Watchlist
+
+- Symbiotec IPO allotment finalized today (Aug 28) → refunds/credits Aug 31 → listing-day performance Sep 1
+- Cipla's Pithampur 483 response and subsequent USFDA classification
+- Closing statements of the Goyal Japan delegation (Aug 25-28); India-Japan regulatory mutual recognition follow-up
+- Official IPC 'near-miss' framework announcement (would affect pharmacovigilance compliance)
+- US Commerce citric acid case comment period and final-determination process (due no later than Jan 8, 2027)
