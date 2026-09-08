@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>India Pharma Daily</title>
+<title>Pharma Daily | Multi-Country</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -16,17 +16,32 @@
 
   /* 头部 */
   header { text-align: center; margin-bottom: 30px; position: relative; }
-  .lang-switch {
+  .top-switch {
     position: absolute; top: 0; right: 0;
     display: inline-flex; gap: 4px; background: #fff;
     border: 1.5px solid #d0d7de; border-radius: 999px; padding: 3px;
   }
-  .lang-switch a {
+  .top-switch a {
     text-decoration: none; font-size: 13px; font-weight: 700;
     padding: 5px 16px; border-radius: 999px; color: #57606a; transition: all .15s;
   }
-  .lang-switch a.active { background: #0d6efd; color: #fff; }
-  .lang-switch a:hover { color: #0d6efd; }
+  .top-switch a.active { background: #0d6efd; color: #fff; }
+  .top-switch a:hover { color: #0d6efd; }
+
+  /* 国家筛选框 */
+  .country-selector {
+    margin: 0 auto 14px; display: flex; justify-content: center; align-items: center; gap: 10px;
+  }
+  .country-selector label { font-size: 14px; font-weight: 700; color: #57606a; white-space: nowrap; }
+  .country-selector select {
+    padding: 9px 30px 9px 14px; border: 2px solid #0d6efd; border-radius: 999px;
+    font-size: 15px; font-weight: 800; color: #0d6efd; background: #fff; outline: none;
+    cursor: pointer; appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230d6efd' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center;
+  }
+  .country-selector select:focus { border-color: #0a58ca; }
+
   header h1 {
     font-size: 30px; font-weight: 800; letter-spacing: 1px;
     color: #1f2328; margin-bottom: 6px;
@@ -34,7 +49,7 @@
   header h1 .zh { font-size: 15px; font-weight: 500; color: #6e7781; margin-left: 8px; }
   header .sub {
     font-size: 13.5px; color: #57606a; line-height: 1.8;
-    max-width: 780px; margin: 0 auto;
+    max-width: 800px; margin: 0 auto;
   }
   header .sub b { color: #0d6efd; }
 
@@ -183,12 +198,19 @@
 <div class="container">
 
   <header>
-    <div class="lang-switch">
+    <div class="top-switch">
       <a href="index.html">中文</a>
       <a href="index-en.html" class="active">EN</a>
     </div>
-    <h1>🇮🇳 India Pharma Daily<span class="zh">印度医药日报</span></h1>
-    <p class="sub">
+    <div class="country-selector">
+      <label for="countrySelect">🌍 Country:</label>
+      <select id="countrySelect">
+        <option value="india">🇮🇳 India</option>
+        <option value="russia">🇷🇺 Russia</option>
+      </select>
+    </div>
+    <h1 id="mainTitle">🇮🇳 India Pharma Daily<span class="zh" id="mainTitleZh">印度医药日报</span></h1>
+    <p class="sub" id="mainSub">
       Government pharma policy (Dept. of Pharmaceuticals / CDSCO / MOCI / Chemicals & Fertilizers / DGTR etc.) · Industry news (ET Pharma / Express Pharma / USFDA etc.) · 25 key client updates<br>
       Auto-generated daily at 07:30 · Amounts in USD at real-time FX · Clickable source links on every item
     </p>
@@ -202,7 +224,7 @@
       <div class="today-date" id="todayDate">Loading…</div>
       <div class="today-desc">Latest edition · Click to view the full report</div>
       <a class="today-link" id="todayLink" href="reports/" target="_blank">👉 Open Today's Report</a>
-      <div class="today-tip">Click the blue button above to view the latest full report</div>
+      <div class="today-tip">Click the button above to view the latest full report</div>
     </section>
 
     <!-- 右栏：历史日报 + 日期筛选 -->
@@ -224,22 +246,12 @@
 
   <!-- 重点追踪客户 -->
   <section class="clients-panel">
-    <h2>🎯 Key Clients Tracked (25)</h2>
-    <div class="clients-tags">
-      <span>ALEMBIC PHARMA</span><span>OTSUKA CHEMICAL</span><span>AQUATIC REMEDIES</span>
-      <span>VIRCHOW PETRO CHEMICAL</span><span>AUROBINDO</span><span>PRATISTHA PHARMA</span>
-      <span>ANUH PHARMA</span><span>APITORIA PHARMA</span><span>SYNTHIMED LABS</span>
-      <span>LUPIN</span><span>SHRIYA PHARMA SURGICAL</span><span>ENVEE DRUGS</span>
-      <span>PENAM LABORATORIES</span><span>STERILE INDIA</span><span>SYSCHEM INDIA</span>
-      <span>LABORATE PHARMACEUTICALS INDIA</span><span>COVALENT LABORATORIES</span>
-      <span>MAXCURE NUTRAVEDICS</span><span>MAHIMA LIFESCIENCE</span><span>INNOVA CAPTAB</span>
-      <span>G C CHEMIE PHARMIE</span><span>MEDICEF PHARMA</span><span>FARMACHEM LIFE</span>
-      <span>DALAS BIOTECH</span><span>VITAL LABORATORIES</span>
-    </div>
+    <h2 id="clientsTitle">🎯 Key Clients Tracked (25)</h2>
+    <div class="clients-tags" id="clientsTags"></div>
   </section>
 
   <footer>
-    Maintained by the <b>india-pharma-daily-en</b> skill · Reports archived in <a href="reports/" style="color:#57606a">reports/</a><br>
+    Maintained by the <b>pharma-daily</b> skill · Reports archived in <a href="reports/" style="color:#57606a">reports/</a><br>
     Repository: <a href="https://github.com/songjen/india-pharma-report" style="color:#57606a">songjen/india-pharma-report</a>
   </footer>
 
@@ -249,7 +261,41 @@
 (function () {
   const REPO = "songjen/india-pharma-report";
   const API = "https://api.github.com/repos/" + REPO + "/contents/reports";
-  const FILE_PATTERN = /India_Pharma_Daily_(\d{8})\.md$/;
+
+  // 各国配置（英文版）
+  const COUNTRIES = {
+    india: {
+      flag: "🇮🇳",
+      title: "India Pharma Daily",
+      titleZh: "印度医药日报",
+      filePattern: /India_Pharma_Daily_(\d{8})\.md$/,
+      sub: 'Government pharma policy (Dept. of Pharmaceuticals / CDSCO / MOCI / Chemicals & Fertilizers / DGTR etc.) · Industry news (ET Pharma / Express Pharma / USFDA etc.) · 25 key client updates<br>Auto-generated daily at 07:30 · Amounts in USD at real-time FX · Clickable source links on every item',
+      clients: [
+        "ALEMBIC PHARMA","OTSUKA CHEMICAL","AQUATIC REMEDIES","VIRCHOW PETRO CHEMICAL","AUROBINDO",
+        "PRATISTHA PHARMA","ANUH PHARMA","APITORIA PHARMA","SYNTHIMED LABS","LUPIN",
+        "SHRIYA PHARMA SURGICAL","ENVEE DRUGS","PENAM LABORATORIES","STERILE INDIA","SYSCHEM INDIA",
+        "LABORATE PHARMACEUTICALS INDIA","COVALENT LABORATORIES","MAXCURE NUTRAVEDICS","MAHIMA LIFESCIENCE","INNOVA CAPTAB",
+        "G C CHEMIE PHARMIE","MEDICEF PHARMA","FARMACHEM LIFE","DALAS BIOTECH","VITAL LABORATORIES"
+      ]
+    },
+    russia: {
+      flag: "🇷🇺",
+      title: "Russia Pharma Daily",
+      titleZh: "Российский ФармДайли",
+      filePattern: /Russia_Pharma_Daily_(\d{8})\.md$/,
+      sub: 'Government pharma policy (Minzdrav / Roszdravnadzor / Minpromtorg / FAS / FCS / EEC etc.) · Industry news (Vademecum / Pharmvestnik / REMEDIUM etc.) · 32 key client updates<br>Auto-generated daily at 08:00 · Amounts in USD at real-time FX · Clickable source links on every item',
+      clients: [
+        "ACTIVE COMPONENT","ADAMS KEMIKALS","AKRIKHIN","GEDEON RICHTER RUS","BEZEN MANUFEKCHURING RUS",
+        "BINNOFARM","BRIGHT WAY","FARMASINTEZ","FIRMA AVGUST","GEROPHARM",
+        "GLOBALVIT","ChemRar (ХимРар)","KANONFARMA PRODAKSHN","KORMOVIT","KRKA-RUS",
+        "MEGAMIKS","ENDOPHARM","MATERIA MEDICA","NITA-FARM","NIZHFARM (STADA)",
+        "OZON PHARM","PFK OBNOVLENIE","PROTEK","RESURS-YUG","SHANS ENTERPRAJZ",
+        "VALENTA PHARMA","VELFARM","VEROPHARM","VERTEKS","VETLINE",
+        "VITOMEK","NORTHERN STAR"
+      ]
+    }
+  };
+
   const select = document.getElementById("dateSelect");
   const openBtn = document.getElementById("openBtn");
   const listEl = document.getElementById("historyList");
@@ -258,6 +304,12 @@
   const todayDate = document.getElementById("todayDate");
   const todayLink = document.getElementById("todayLink");
   const totalCount = document.getElementById("totalCount");
+  const countrySelect = document.getElementById("countrySelect");
+  const mainTitle = document.getElementById("mainTitle");
+  const mainTitleZh = document.getElementById("mainTitleZh");
+  const mainSub = document.getElementById("mainSub");
+  const clientsTitle = document.getElementById("clientsTitle");
+  const clientsTags = document.getElementById("clientsTags");
 
   function fmtDate(ymd) {
     if (!ymd || ymd.length !== 8) return ymd || "";
@@ -269,7 +321,31 @@
     errBox.innerHTML = "⚠️ " + msg;
   }
 
-  async function load() {
+  function renderHeader(cfg) {
+    mainTitle.innerHTML = cfg.flag + " " + cfg.title + '<span class="zh">' + cfg.titleZh + '</span>';
+    mainSub.innerHTML = cfg.sub;
+    clientsTitle.textContent = "🎯 Key Clients Tracked (" + cfg.clients.length + ")";
+    clientsTags.innerHTML = "";
+    cfg.clients.forEach(function (c) {
+      var s = document.createElement("span");
+      s.textContent = c;
+      clientsTags.appendChild(s);
+    });
+  }
+
+  async function load(countryKey) {
+    const cfg = COUNTRIES[countryKey] || COUNTRIES.india;
+    renderHeader(cfg);
+
+    listEl.innerHTML = "";
+    emptyTip.style.display = "none";
+    errBox.style.display = "none";
+    totalCount.textContent = "—";
+    todayDate.textContent = "Loading…";
+    select.innerHTML = '<option value="">Loading…</option>';
+    select.disabled = true;
+    openBtn.disabled = true;
+
     let files;
     try {
       const res = await fetch(API, { headers: { "Accept": "application/vnd.github+json" } });
@@ -286,9 +362,9 @@
     }
 
     const items = files
-      .filter(function (f) { return FILE_PATTERN.test(f.name); })
+      .filter(function (f) { return cfg.filePattern.test(f.name); })
       .map(function (f) {
-        var m = f.name.match(FILE_PATTERN);
+        var m = f.name.match(cfg.filePattern);
         return {
           name: f.name,
           date: m ? m[1] : "",
@@ -299,8 +375,10 @@
 
     if (!items.length) {
       emptyTip.style.display = "block";
+      emptyTip.textContent = "No archived " + cfg.title + " reports yet";
       totalCount.textContent = "0";
       todayDate.textContent = "—";
+      todayLink.href = "reports/";
       return;
     }
 
@@ -314,6 +392,7 @@
     if (!options.length) {
       select.innerHTML = '<option value="">No archived issues</option>';
       emptyTip.style.display = "block";
+      emptyTip.textContent = "No earlier archived issues";
     } else {
       select.innerHTML = '<option value="">Select a date…</option>';
       options.forEach(function (it) {
@@ -348,8 +427,16 @@
     var v = select.value;
     if (v) window.open(v, "_blank");
   });
+  select.addEventListener("change", function () {
+    if (select.value) openBtn.disabled = false;
+  });
 
-  load();
+  countrySelect.addEventListener("change", function () {
+    load(countrySelect.value);
+  });
+
+  // 初始加载（默认印度）
+  load("india");
 })();
 </script>
 </body>

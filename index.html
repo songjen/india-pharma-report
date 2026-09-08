@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>印度医药日报 | India Pharma Daily</title>
+<title>各国医药日报 | Pharma Daily</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -16,17 +16,32 @@
 
   /* 头部 */
   header { text-align: center; margin-bottom: 30px; position: relative; }
-  .lang-switch {
+  .top-switch {
     position: absolute; top: 0; right: 0;
     display: inline-flex; gap: 4px; background: #fff;
     border: 1.5px solid #d0d7de; border-radius: 999px; padding: 3px;
   }
-  .lang-switch a {
+  .top-switch a {
     text-decoration: none; font-size: 13px; font-weight: 700;
     padding: 5px 16px; border-radius: 999px; color: #57606a; transition: all .15s;
   }
-  .lang-switch a.active { background: #0d6efd; color: #fff; }
-  .lang-switch a:hover { color: #0d6efd; }
+  .top-switch a.active { background: #0d6efd; color: #fff; }
+  .top-switch a:hover { color: #0d6efd; }
+
+  /* 国家筛选框 */
+  .country-selector {
+    margin: 0 auto 14px; display: flex; justify-content: center; align-items: center; gap: 10px;
+  }
+  .country-selector label { font-size: 14px; font-weight: 700; color: #57606a; white-space: nowrap; }
+  .country-selector select {
+    padding: 9px 30px 9px 14px; border: 2px solid #0d6efd; border-radius: 999px;
+    font-size: 15px; font-weight: 800; color: #0d6efd; background: #fff; outline: none;
+    cursor: pointer; appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%230d6efd' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 14px center;
+  }
+  .country-selector select:focus { border-color: #0a58ca; }
+
   header h1 {
     font-size: 30px; font-weight: 800; letter-spacing: 1px;
     color: #1f2328; margin-bottom: 6px;
@@ -34,7 +49,7 @@
   header h1 .en { font-size: 15px; font-weight: 500; color: #6e7781; margin-left: 8px; }
   header .sub {
     font-size: 13.5px; color: #57606a; line-height: 1.8;
-    max-width: 760px; margin: 0 auto;
+    max-width: 780px; margin: 0 auto;
   }
   header .sub b { color: #0d6efd; }
 
@@ -183,12 +198,19 @@
 <div class="container">
 
   <header>
-    <div class="lang-switch">
+    <div class="top-switch">
       <a href="index.html" class="active">中文</a>
       <a href="index-en.html">EN</a>
     </div>
-    <h1>🇮🇳 印度医药日报<span class="en">India Pharma Daily</span></h1>
-    <p class="sub">
+    <div class="country-selector">
+      <label for="countrySelect">🌍 国家：</label>
+      <select id="countrySelect">
+        <option value="india">🇮🇳 印度</option>
+        <option value="russia">🇷🇺 俄罗斯</option>
+      </select>
+    </div>
+    <h1 id="mainTitle">🇮🇳 印度医药日报<span class="en" id="mainTitleEn">India Pharma Daily</span></h1>
+    <p class="sub" id="mainSub">
       政府医药政策（制药司 / CDSCO / 商工部MOCI / 化学品部 / DGTR 等）· 医药行业动态（ET Pharma / Express Pharma / USFDA 等）· 25 家重点客户动态<br>
       每日 07:30 自动生成 · 金额按实时汇率换算美元 · 每条新闻附可点击来源链接
     </p>
@@ -196,13 +218,13 @@
 
   <div class="layout">
 
-    <!-- 左栏：今日日报（红色大卡片，醒目可点击） -->
+    <!-- 左栏：今日日报（大卡片，醒目可点击） -->
     <section class="today-card">
       <div class="today-badge">今日日报</div>
       <div class="today-date" id="todayDate">加载中…</div>
       <div class="today-desc">最新一期 · 点击查看完整内容</div>
       <a class="today-link" id="todayLink" href="reports/" target="_blank">👉 点击进入今日日报</a>
-      <div class="today-tip">点击上方红色按钮查看最新一期完整日报</div>
+      <div class="today-tip">点击上方按钮查看最新一期完整日报</div>
     </section>
 
     <!-- 右栏：历史日报 + 日期筛选 -->
@@ -224,22 +246,12 @@
 
   <!-- 重点追踪客户 -->
   <section class="clients-panel">
-    <h2>🎯 重点追踪客户（25 家）</h2>
-    <div class="clients-tags">
-      <span>ALEMBIC PHARMA</span><span>OTSUKA CHEMICAL</span><span>AQUATIC REMEDIES</span>
-      <span>VIRCHOW PETRO CHEMICAL</span><span>AUROBINDO</span><span>PRATISTHA PHARMA</span>
-      <span>ANUH PHARMA</span><span>APITORIA PHARMA</span><span>SYNTHIMED LABS</span>
-      <span>LUPIN</span><span>SHRIYA PHARMA SURGICAL</span><span>ENVEE DRUGS</span>
-      <span>PENAM LABORATORIES</span><span>STERILE INDIA</span><span>SYSCHEM INDIA</span>
-      <span>LABORATE PHARMACEUTICALS INDIA</span><span>COVALENT LABORATORIES</span>
-      <span>MAXCURE NUTRAVEDICS</span><span>MAHIMA LIFESCIENCE</span><span>INNOVA CAPTAB</span>
-      <span>G C CHEMIE PHARMIE</span><span>MEDICEF PHARMA</span><span>FARMACHEM LIFE</span>
-      <span>DALAS BIOTECH</span><span>VITAL LABORATORIES</span>
-    </div>
+    <h2 id="clientsTitle">🎯 重点追踪客户（25 家）</h2>
+    <div class="clients-tags" id="clientsTags"></div>
   </section>
 
   <footer>
-    本页面由 <b>india-pharma-daily</b> 技能自动维护 · 日报存档于 <a href="reports/" style="color:#57606a">reports/</a> 目录<br>
+    本页面由 <b>pharma-daily</b> 技能自动维护 · 日报存档于 <a href="reports/" style="color:#57606a">reports/</a> 目录<br>
     GitHub 仓库：<a href="https://github.com/songjen/india-pharma-report" style="color:#57606a">songjen/india-pharma-report</a>
   </footer>
 
@@ -249,7 +261,41 @@
 (function () {
   const REPO = "songjen/india-pharma-report";
   const API = "https://api.github.com/repos/" + REPO + "/contents/reports";
-  const FILE_PATTERN = /印度医药日报_(\d{8})\.md$/;
+
+  // 各国配置（中文版）
+  const COUNTRIES = {
+    india: {
+      flag: "🇮🇳",
+      title: "印度医药日报",
+      titleEn: "India Pharma Daily",
+      filePattern: /印度医药日报_(\d{8})\.md$/,
+      sub: '政府医药政策（制药司 / CDSCO / 商工部MOCI / 化学品部 / DGTR 等）· 医药行业动态（ET Pharma / Express Pharma / USFDA 等）· 25 家重点客户动态<br>每日 07:30 自动生成 · 金额按实时汇率换算美元 · 每条新闻附可点击来源链接',
+      clients: [
+        "ALEMBIC PHARMA","OTSUKA CHEMICAL","AQUATIC REMEDIES","VIRCHOW PETRO CHEMICAL","AUROBINDO",
+        "PRATISTHA PHARMA","ANUH PHARMA","APITORIA PHARMA","SYNTHIMED LABS","LUPIN",
+        "SHRIYA PHARMA SURGICAL","ENVEE DRUGS","PENAM LABORATORIES","STERILE INDIA","SYSCHEM INDIA",
+        "LABORATE PHARMACEUTICALS INDIA","COVALENT LABORATORIES","MAXCURE NUTRAVEDICS","MAHIMA LIFESCIENCE","INNOVA CAPTAB",
+        "G C CHEMIE PHARMIE","MEDICEF PHARMA","FARMACHEM LIFE","DALAS BIOTECH","VITAL LABORATORIES"
+      ]
+    },
+    russia: {
+      flag: "🇷🇺",
+      title: "俄罗斯医药日报",
+      titleEn: "Российский ФармДайли",
+      filePattern: /俄罗斯医药日报_(\d{8})\.md$/,
+      sub: '政府医药政策（Minzdrav / Roszdravnadzor / Minpromtorg / FAS / FCS / EEC 欧亚经济委员会等）· 医药行业动态（Vademecum / Pharmvestnik / REMEDIUM 等）· 32 家重点客户动态<br>每日 08:00 自动生成 · 金额按实时汇率换算美元 · 每条新闻附可点击来源链接',
+      clients: [
+        "ACTIVE COMPONENT","ADAMS KEMIKALS","AKRIKHIN","GEDEON RICHTER RUS","BEZEN MANUFEKCHURING RUS",
+        "BINNOFARM","BRIGHT WAY","FARMASINTEZ","FIRMA AVGUST","GEROPHARM",
+        "GLOBALVIT","ХимРар (CHEMRAR)","KANONFARMA PRODAKSHN","KORMOVIT","КРКА-РУС (KRKA)",
+        "MEGAMIKS","ЭНДОФАРМ","МАТЕРИА МЕДИКА","NITA-FARM","NIZHFARM (STADA)",
+        "ОЗОН ФАРМ","PFK OBNOVLENIE","PROTEK","RESURS-YUG","SHANS ENTERPRAJZ",
+        "VALENTA PHARMA","VELFARM","VEROPHARM","VERTEKS","VETLINE",
+        "VITOMEK","NORTHERN STAR"
+      ]
+    }
+  };
+
   const select = document.getElementById("dateSelect");
   const openBtn = document.getElementById("openBtn");
   const listEl = document.getElementById("historyList");
@@ -258,6 +304,14 @@
   const todayDate = document.getElementById("todayDate");
   const todayLink = document.getElementById("todayLink");
   const totalCount = document.getElementById("totalCount");
+  const countrySelect = document.getElementById("countrySelect");
+  const mainTitle = document.getElementById("mainTitle");
+  const mainTitleEn = document.getElementById("mainTitleEn");
+  const mainSub = document.getElementById("mainSub");
+  const clientsTitle = document.getElementById("clientsTitle");
+  const clientsTags = document.getElementById("clientsTags");
+
+  let current = null;
 
   function fmtDate(ymd) {
     if (!ymd || ymd.length !== 8) return ymd || "";
@@ -269,7 +323,33 @@
     errBox.textContent = "⚠️ " + msg;
   }
 
-  async function load() {
+  function renderHeader(cfg) {
+    mainTitle.innerHTML = cfg.flag + " " + cfg.title + '<span class="en">' + cfg.titleEn + '</span>';
+    mainSub.innerHTML = cfg.sub;
+    clientsTitle.textContent = "🎯 重点追踪客户（" + cfg.clients.length + " 家）";
+    clientsTags.innerHTML = "";
+    cfg.clients.forEach(function (c) {
+      var s = document.createElement("span");
+      s.textContent = c;
+      clientsTags.appendChild(s);
+    });
+  }
+
+  async function load(countryKey) {
+    const cfg = COUNTRIES[countryKey] || COUNTRIES.india;
+    current = cfg;
+    renderHeader(cfg);
+
+    // 重置列表状态
+    listEl.innerHTML = "";
+    emptyTip.style.display = "none";
+    errBox.style.display = "none";
+    totalCount.textContent = "—";
+    todayDate.textContent = "加载中…";
+    select.innerHTML = '<option value="">加载中…</option>';
+    select.disabled = true;
+    openBtn.disabled = true;
+
     let files;
     try {
       const res = await fetch(API, { headers: { "Accept": "application/vnd.github+json" } });
@@ -286,9 +366,9 @@
     }
 
     const items = files
-      .filter(function (f) { return FILE_PATTERN.test(f.name); })
+      .filter(function (f) { return cfg.filePattern.test(f.name); })
       .map(function (f) {
-        var m = f.name.match(FILE_PATTERN);
+        var m = f.name.match(cfg.filePattern);
         return {
           name: f.name,
           date: m ? m[1] : "",
@@ -299,35 +379,36 @@
 
     if (!items.length) {
       emptyTip.style.display = "block";
+      emptyTip.textContent = "暂无" + cfg.title + "存档";
       totalCount.textContent = "0";
+      todayDate.textContent = "—";
+      todayLink.href = "reports/";
       return;
     }
 
     totalCount.textContent = items.length + " 期";
     const today = items[0];
 
-    // 今日日报（最新一期）
     todayDate.textContent = fmtDate(today.date);
     todayLink.href = today.url;
 
-    // 历史日报下拉（排除今日）
     const options = items.slice(1);
     if (!options.length) {
       select.innerHTML = '<option value="">暂无历史日报</option>';
       emptyTip.style.display = "block";
+      emptyTip.textContent = "暂无更早的历史日报";
     } else {
       select.innerHTML = '<option value="">请选择日期…</option>';
       options.forEach(function (it) {
         var opt = document.createElement("option");
         opt.value = it.url;
-        opt.textContent = fmtDate(it.date) + "（" + it.name.replace(/\.md$/, "") + "）";
+        opt.textContent = fmtDate(it.date);
         select.appendChild(opt);
       });
       select.disabled = false;
       openBtn.disabled = false;
     }
 
-    // 历史日报列表（全部，倒序）
     items.forEach(function (it) {
       var li = document.createElement("li");
       var a = document.createElement("a");
@@ -354,7 +435,12 @@
     if (select.value) openBtn.disabled = false;
   });
 
-  load();
+  countrySelect.addEventListener("change", function () {
+    load(countrySelect.value);
+  });
+
+  // 初始加载（默认印度）
+  load("india");
 })();
 </script>
 </body>

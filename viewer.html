@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>印度医药日报 | 查看</title>
+<title>医药日报 | 查看</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -79,7 +79,7 @@
 
 <div class="topbar">
   <a href="index.html">🏠 返回首页</a>
-  <span class="title" id="pageTitle">印度医药日报</span>
+  <span class="title" id="pageTitle">医药日报</span>
   <div class="spacer"></div>
   <a href="reports/" target="_blank">📂 reports/</a>
 </div>
@@ -105,13 +105,25 @@
     return;
   }
 
+  // 根据文件名前缀识别国家/语言，显示对应标题
+  function detectTitle(fname) {
+    var cn = fname.match(/^([\u4e00-\u9fa5]+)医药日报_(\d{8})\.md$/);
+    if (cn) return { label: cn[1] + "医药日报", date: cn[2] };
+    var ru = fname.match(/^Russia_Pharma_Daily_(\d{8})\.md$/);
+    if (ru) return { label: "Russia Pharma Daily", date: ru[1] };
+    var in_en = fname.match(/^India_Pharma_Daily_(\d{8})\.md$/);
+    if (in_en) return { label: "India Pharma Daily", date: in_en[1] };
+    var m2 = fname.match(/(\d{8})\.md$/);
+    return { label: "医药日报", date: m2 ? m2[1] : "" };
+  }
+
   // 显示日期于标题
-  var m = file.match(/(\d{8})\.md$/);
-  if (m) {
-    var d = m[1];
+  var t = detectTitle(file);
+  if (t.date) {
+    var d = t.date;
     document.getElementById("pageTitle").textContent =
-      "印度医药日报 | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
-    document.title = "印度医药日报 | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
+      t.label + " | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
+    document.title = t.label + " | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
   }
 
   var RAW = "https://raw.githubusercontent.com/" + REPO + "/main/reports/" + encodeURIComponent(file);
