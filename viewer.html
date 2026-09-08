@@ -111,6 +111,8 @@
     if (cn) return { label: cn[1] + "医药日报", date: cn[2] };
     var ru = fname.match(/^Russia_Pharma_Daily_(\d{8})\.md$/);
     if (ru) return { label: "Russia Pharma Daily", date: ru[1] };
+    var br = fname.match(/^Brazil_Pharma_Daily_(\d{8})\.md$/);
+    if (br) return { label: "Brazil Pharma Daily", date: br[1] };
     var in_en = fname.match(/^India_Pharma_Daily_(\d{8})\.md$/);
     if (in_en) return { label: "India Pharma Daily", date: in_en[1] };
     var m2 = fname.match(/(\d{8})\.md$/);
