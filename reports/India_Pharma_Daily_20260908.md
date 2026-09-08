@@ -1,6 +1,6 @@
 # India Pharma Daily | 2026-09-08
 
-> FX: As of 2026-09-08 17:30 (Beijing time), 1 USD ≈ ₹94.87
+> FX: As of 2026-09-08 17:58 (Beijing time), 1 USD ≈ ₹94.82
 
 ---
 
@@ -20,6 +20,10 @@
 
 **【2026-09-05】Cohance Lifesciences receives USFDA Form 483 (4 observations) for Telangana FDF plant** — Former Suven Pharma (now Cohance Lifesciences) said USFDA inspected its formulation (FDF) plant at Shamshabad, Telangana from Aug 27 to Sept 4 and issued a Form 483 with 4 observations at close; the company has initiated CAPA and will respond within the stipulated timeline. Cohance recently announced ~US$18M combined investment (US$13M NJ Bio + US$5M Aruka Bio) to expand ADC CDMO capabilities. — Source: [CNBC-TV18](https://www.cnbctv18.com/market/cohance-life-receives-form-483-with-4-observations-from-usfda-for-fdf-plant-in-telangana-19984729.htm)
 
+## 3. Key Client Updates
+
+**【2026-09-03】Cipla signs exclusive US partnership with Qilu Pharma for Keytruda biosimilar QL2107** — Cipla, through US subsidiary Invagen Pharmaceuticals, entered an exclusive licensing-and-supply pact with China's Qilu Pharmaceutical for QL2107, a biosimilar candidate to Merck's Keytruda® (pembrolizumab). Qilu will handle development, regulatory registration and manufacturing; Cipla USA leads US commercialisation. The deal extends Cipla's biosimilar portfolio into oncology. Qilu is a vertically integrated Chinese drugmaker with a 50+ biosimilar pipeline. Cipla MD & Global CEO Achin Gupta said the partnership reflects confidence in biosimilars' long-term potential and its oncology-focused strategy. — Source: [InvestyWise](https://www.investywise.com/cipla-partners-with-qilu-pharmaceutical-for-us-biosimilar-deal)
+
 ## 4. Risk Alerts
 
 - **Softening India anti-infective demand signal**: Aug 2026 IPM anti-infective sales grew only +2.7% and respiratory +2.2%, with overall prescription growth at 1.1% (3-month low). Suppliers of anti-infective APIs/intermediates to India should track order momentum (Source: [The Hindu BusinessLine](https://www.thehindubusinessline.com/news/mounjaro-becomes-indias-top-selling-drug-as-patients-shift-to-glp-1-injections/article71438811.ece)).
@@ -29,6 +33,7 @@
 ## 5. Tomorrow's Watchlist
 
 - **iPHEX 2026 / Bharat Health Global Expo (Sept 7–9, New Delhi)**: closing day Sept 9 — watch Pharmexcil export-promotion outcomes (target ≈US$1.4 bn in business opportunities), API/formulation B2B signings.
+- **Cipla×Qilu QL2107 follow-up & the China-India biologics cooperation model**: Qilu enters the US biosimilar market via "made-in-China development/production + Indian pharma channel". Watch whether this model spreads to other Chinese biologics/CDMO players partnering with India (a channel for Chinese biologics exports to India).
 - **Regulatory data exclusivity follow-up**: whether OPPI's NCE 10-yr / biologics 12-yr demand enters formal consultation against health-ministry opposition.
 - **US MFN expansion ripple effects**: pace of API reserve donations by the nine new signatories (Sun Pharma/Teva/UCB); Regeneron signed as 27th company — watch other drugmakers.
 - **IPC semaglutide monograph**: Indian Pharmacopoeia Commission plans a mandatory semaglutide monograph; 30+ domestic generic makers face converging quality standards — watch peptide API supply-chain impact.
