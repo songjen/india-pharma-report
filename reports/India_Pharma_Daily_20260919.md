@@ -1,6 +1,10 @@
 India Pharma Daily | 2026-09-19
 > At the live rate of 2026-09-19 07:30, 1 USD ≈ ₹95.98
 
+> 🎧 **Audio edition** (Chinese male voice · full-text narration)
+
+<audio controls preload="none" style="width:100%" src="https://songjen.github.io/india-pharma-report/audio/india_daily_20260919.mp3"></audio>
+
 ## 1. Government Pharma Policy
 
 **【2026-09-17】DGTR issues affirmative final findings on Ethambutol Hydrochloride; duty on non-cooperative Chinese producers raised to US$7,234/MT** — India's Directorate General of Trade Remedies (DGTR), Ministry of Commerce and Industry, has issued affirmative final findings in the anti-dumping investigation into Ethambutol Hydrochloride (an anti-TB API) originating in or exported from China PR and Thailand, recommending a **five-year anti-dumping duty** as follows: **Wuhan Wuyao Pharmaceutical Co., Limited (China) US$5,347/MT**, **any other Chinese producer US$7,234/MT**, and **all Thai producers US$6,584/MT**; the goods fall under Indian customs HS codes 2905 14 10 and 2905 14 90. The case (AD(OI)-22/2025, File No. 6/25/2025-DGTR) was initiated on 2025-09-23 on an application by **Lupin Limited**, India's sole domestic producer; the period of investigation is 2024-04-01 to 2025-03-31. Preliminary findings of 2026-01-30 had proposed provisional duties of US$5,124 / 6,096 / 6,513 per MT, meaning the **final rate for non-cooperative Chinese producers is about 18.7% higher than the preliminary rate**. The preliminary record shows three responding Chinese producers — Wuhan Wuyao Pharmaceutical, **Sinobright Pharmaceutical Industries Ltd** and Brilliant Pharmaceutical Limited (none claimed market-economy treatment, so normal value was computed on the Indian price basis). Importer/user questionnaires were sent to 14 Indian parties including **Anuh Pharma, Aquatic Remedies, Macleods Pharmaceuticals**, Cadila Pharmaceuticals, Strides Pharma and Imex Overseas — **none of which responded** — Source: [DGTR](https://www.dgtr.gov.in/en/anti-dumping-cases/anti-dumping-investigation-concerning-imports-ethambutol-hydrochloride)
