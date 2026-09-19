@@ -73,6 +73,34 @@
     padding: 20px 28px; font-size: 14px;
   }
   .loading { text-align: center; padding: 80px 0; color: #57606a; font-size: 15px; }
+
+  /* 页内悬浮播放器 */
+  #audioBar {
+    position: fixed; left: 50%; transform: translateX(-50%);
+    bottom: 18px; z-index: 99; width: min(680px, 92vw);
+    background: #1f2328; color: #fff; border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.25); padding: 10px 14px;
+    display: none; align-items: center; gap: 10px;
+  }
+  #audioBar .abtn {
+    cursor: pointer; width: 38px; height: 38px; border-radius: 50%;
+    background: #c00; color: #fff; border: none; font-size: 16px;
+    display: flex; align-items: center; justify-content: center; flex: none;
+  }
+  #audioBar .abody { flex: 1; min-width: 0; }
+  #audioBar .atitle {
+    font-size: 12px; color: #e6e6e6; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px;
+  }
+  #audioBar input[type=range] { width: 100%; accent-color: #ff5c5c; height: 14px; cursor: pointer; }
+  #audioBar .atime { font-size: 11px; color: #b0b6bd; margin-top: 2px; }
+  #audioBar .aclose {
+    cursor: pointer; background: none; border: none; color: #b0b6bd;
+    font-size: 18px; flex: none; padding: 4px 6px;
+  }
+  #audioBar .aclose:hover { color: #fff; }
+  /* 语音收听链接样式（🎧 引导行内的 .mp3 链接） */
+  .markdown-body a[href$='.mp3'] { font-weight: 700; }
 </style>
 </head>
 <body>
@@ -87,6 +115,17 @@
 <div id="loading" class="loading">⏳ 加载中…</div>
 <div id="errbox" class="errbox" style="display:none"></div>
 <article class="markdown-body" id="content" style="display:none"></article>
+
+<div id="audioBar">
+  <button class="abtn" id="aPlay">▶</button>
+  <div class="abody">
+    <div class="atitle" id="aTitle">语音版</div>
+    <input type="range" id="aSeek" value="0" min="0" max="1000" step="1">
+    <div class="atime"><span id="aCur">0:00</span> / <span id="aDur">--:--</span></div>
+  </div>
+  <button class="aclose" id="aClose">✕</button>
+  <audio id="aAudio" preload="none"></audio>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <script>
@@ -147,6 +186,7 @@
       contentEl.innerHTML = html;
       loadingEl.style.display = "none";
       contentEl.style.display = "block";
+      setupAudioLinks();
     })
     .catch(function (e) {
       loadingEl.style.display = "none";
@@ -155,6 +195,63 @@
         "可直接访问原始文件：<a href='" + RAW + "' style='color:#c00'>" + file + "</a>";
     });
 })();
+
+// ===== 耳机/音频链接：点击页内直接播放，不跳转 =====
+function setupAudioLinks() {
+  var bar = document.getElementById("audioBar");
+  var audio = document.getElementById("aAudio");
+  var btn = document.getElementById("aPlay");
+  var seek = document.getElementById("aSeek");
+  var curEl = document.getElementById("aCur");
+  var durEl = document.getElementById("aDur");
+  var titleEl = document.getElementById("aTitle");
+  var seeking = false;
+
+  function fmt(s) {
+    if (!isFinite(s)) return "--:--";
+    s = Math.floor(s);
+    return Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2);
+  }
+  function showBar(name) {
+    bar.style.display = "flex";
+    titleEl.textContent = "🎧 " + name;
+  }
+  btn.addEventListener("click", function () {
+    if (audio.paused) { audio.play(); } else { audio.pause(); }
+  });
+  audio.addEventListener("play", function () { btn.textContent = "⏸"; });
+  audio.addEventListener("pause", function () { btn.textContent = "▶"; });
+  audio.addEventListener("timeupdate", function () {
+    if (!seeking && audio.duration) {
+      seek.value = Math.round(audio.currentTime / audio.duration * 1000);
+    }
+    curEl.textContent = fmt(audio.currentTime);
+  });
+  audio.addEventListener("durationchange", function () {
+    durEl.textContent = fmt(audio.duration);
+  });
+  audio.addEventListener("ended", function () { btn.textContent = "▶"; seek.value = 0; });
+  seek.addEventListener("input", function () { seeking = true; });
+  seek.addEventListener("change", function () {
+    if (audio.duration) audio.currentTime = seek.value / 1000 * audio.duration;
+    seeking = false;
+  });
+  document.getElementById("aClose").addEventListener("click", function () {
+    audio.pause(); bar.style.display = "none";
+  });
+
+  // 拦截所有指向 .mp3 的链接：阻止跳转，改为页内播放
+  document.getElementById("content").addEventListener("click", function (ev) {
+    var a = ev.target.closest && ev.target.closest("a[href]");
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (!/\.mp3(\?|$)/i.test(href)) return;
+    ev.preventDefault();
+    if (audio.src !== a.href) { audio.src = a.href; }
+    showBar(a.textContent.replace(/^[^\w\u4e00-\u9fa5]+/, "") || "语音版");
+    audio.play();
+  });
+}
 </script>
 </body>
 </html>

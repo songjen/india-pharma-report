@@ -1,7 +1,7 @@
 India Pharma Daily | 2026-09-19
 > At the live rate of 2026-09-19 07:30, 1 USD ≈ ₹95.98
 
-> 🎧 **Audio edition** (Chinese male voice · full-text narration)
+> 🎧 **Audio edition** (Chinese male voice · full-text narration) — [🔊 Listen now](https://songjen.github.io/india-pharma-report/audio/india_daily_20260919.mp3)
 
 <audio controls preload="none" style="width:100%" src="https://songjen.github.io/india-pharma-report/audio/india_daily_20260919.mp3"></audio>
 
