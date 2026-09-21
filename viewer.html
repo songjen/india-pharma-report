@@ -186,13 +186,34 @@
     document.title = t.label + " | " + d.slice(0,4) + "-" + d.slice(4,6) + "-" + d.slice(6,8);
   }
 
-  var RAW = "https://raw.githubusercontent.com/" + REPO + "/main/reports/" + encodeURIComponent(file);
+  // 取文通道（按稳健性排序）：① Pages 同源（无跨域、随站点同步更新）
+  //                        ② jsDelivr CDN（国内可达性好） ③ raw.githubusercontent.com（部分网络不可达）
+  var ENC = encodeURIComponent(file);
+  var SOURCES = [
+    "reports/" + ENC,
+    "https://cdn.jsdelivr.net/gh/" + REPO + "@main/reports/" + ENC,
+    "https://raw.githubusercontent.com/" + REPO + "/main/reports/" + ENC
+  ];
 
-  fetch(RAW)
-    .then(function (res) {
-      if (!res.ok) throw new Error("HTTP " + res.status);
-      return res.text();
-    })
+  function tryFetch(i) {
+    if (i >= SOURCES.length) return Promise.reject(new Error("全部取文通道均失败"));
+    var url = SOURCES[i];
+    var ctl = (typeof AbortController !== "undefined") ? new AbortController() : null;
+    var timer = setTimeout(function () { if (ctl) ctl.abort(); }, 15000);
+    return fetch(url, ctl ? { signal: ctl.signal, cache: "no-cache" } : undefined)
+      .then(function (res) {
+        clearTimeout(timer);
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.text();
+      })
+      .catch(function (e) {
+        clearTimeout(timer);
+        console.warn("[viewer] 通道 " + (i + 1) + " 失败：" + url + " — " + e.message);
+        return tryFetch(i + 1);
+      });
+  }
+
+  tryFetch(0)
     .then(function (text) {
       var html;
       if (typeof marked !== "undefined") {
@@ -211,7 +232,10 @@
       loadingEl.style.display = "none";
       errEl.style.display = "block";
       errEl.innerHTML = "⚠️ 加载失败：" + e.message + "<br>" +
-        "可直接访问原始文件：<a href='" + RAW + "' style='color:#c00'>" + file + "</a>";
+        "可尝试直连原始文件：" +
+        SOURCES.map(function (u, i) {
+          return "<a href='" + u + "' style='color:#c00'>通道" + (i + 1) + "</a>";
+        }).join(" · ");
     });
 })();
 
