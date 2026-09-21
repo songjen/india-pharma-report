@@ -101,6 +101,23 @@
   #audioBar .aclose:hover { color: #fff; }
   /* 语音收听链接样式（🎧 引导行内的 .mp3 链接） */
   .markdown-body a[href$='.mp3'] { font-weight: 700; }
+  /* 播放条出现时：正文内联 <audio> 隐藏（避免两个播放器叠放）、页面底部留白 */
+  body.hasAudioBar #content audio { display: none; }
+  body.hasAudioBar { padding-bottom: 96px; }
+
+  /* 窄屏（手机 / 企微内置浏览器）适配 */
+  @media (max-width: 640px) {
+    .topbar { padding: 10px 14px; gap: 10px; }
+    .topbar .title { font-size: 14px; }
+    .markdown-body {
+      margin: 12px auto 24px; padding: 20px 16px;
+      font-size: 15px; border-radius: 8px; line-height: 1.8;
+    }
+    .markdown-body h1 { font-size: 1.5em; }
+    .markdown-body h2 { font-size: 1.25em; }
+    .markdown-body th, .markdown-body td { font-size: 13px; padding: 6px 9px; }
+    #audioBar { width: 94vw; bottom: 10px; border-radius: 10px; padding: 9px 12px; }
+  }
 </style>
 </head>
 <body>
@@ -132,6 +149,8 @@
 (function () {
   var params = new URLSearchParams(location.search);
   var file = params.get("file") || "";
+  // play=1：进入即装载音频并尝试自动起播（受浏览器自动播放策略限制时，退化为「播放条就绪、点 ▶ 即播」）
+  window.__RU_AUTOPLAY = params.get("play") === "1";
   var REPO = "songjen/india-pharma-report";
   var contentEl = document.getElementById("content");
   var errEl = document.getElementById("errbox");
@@ -214,6 +233,7 @@ function setupAudioLinks() {
   }
   function showBar(name) {
     bar.style.display = "flex";
+    document.body.classList.add("hasAudioBar");
     titleEl.textContent = "🎧 " + name;
   }
   btn.addEventListener("click", function () {
