@@ -1,0 +1,41 @@
+India Pharma Daily | 2026-10-08
+> At the live rate of 2026-10-08 07:30 (05:00 IST, pre-market), 1 USD ≈ ₹96.75
+
+> 🎧 **Audio edition** (Chinese male voice, full text) — [🔊 Listen to the full report](https://songjen.github.io/india-pharma-report/audio/india_daily_20261008.mp3)
+
+<audio controls preload="none" style="width:100%" src="https://songjen.github.io/india-pharma-report/audio/india_daily_20261008.mp3"></audio>
+
+## 1. Government Pharma Policy
+
+**【2026-10-07】DCC recommends red warning and ban on infant imagery on cough syrup labels** — At its 70th meeting, the Drugs Consultative Committee (DCC) agreed that cough syrup labels must carry a prominent warning in red, in an increased font size, stating that the product "shall not be used in children below 4 years of age", and that pictures of infants, toddlers, toys or similar depictions suggesting suitability for young children should not appear on such labels. The committee recommended initiating the necessary amendment to Rule 96 of the Drugs Rules, 1945 to give the warning statutory backing; the government is considering the change. — Source: [ET Pharma](https://pharma.economictimes.indiatimes.com/news/policy-and-regulations/drug-panel-rejects-child-images-on-cough-syrup-labels-proposes-age-warning-for-use-below-4-years/134754211)【Source: Minutes of the 70th DCC meeting】
+
+**【2026-10-05】Chemicals Ministry opens three-park chemical scheme, proposals due 30 November** — Minister of State for Chemicals and Fertilisers Anupriya Patel urged states and industry to join the "Bhavya Rasayan" scheme for three greenfield chemical parks, with total investment of at least ₹4,500 crore (≈US$465 mn) and a central grant of ₹1,000 crore per park for common infrastructure and utilities; proposals are due by 30 November. The government targets growth of the chemicals sector from US$230 bn to US$1 trn by 2040. — Source: [Rediff (PTI)](https://money.rediff.com/news/market/india-to-build-3-chemical-parks-boost-domestic-output/55611420261005)【Source: India Chem 2026 curtain-raiser, 2026-10-05】
+
+**【2026-10-07】SEC clears AstraZeneca's camizestrant for import and marketing, waives local Phase III** — India's Subject Experts Committee (SEC) granted AstraZeneca Pharma India permission to import and market camizestrant film-coated tablets 75 mg for hormone receptor-positive, HER2-negative locally advanced or metastatic breast cancer upon emergence of ESR1 mutation, with a waiver of the local Phase III clinical trial. Conditions include sale against the prescription of a medical oncologist only and submission of a Phase IV trial protocol within three months of approval. — Source: [ET Pharma](https://pharma.economictimes.indiatimes.com/news/policy-and-regulations/astrazenecas-contentious-cancer-drug-clears-indias-sec-review/134764919)【Source: SEC meeting minutes, 2026-10-04】
+
+## 2. Pharma Industry News
+
+**【2026-10-07】Indian SME pharma firms see intermediate orders shift away from China, but raw materials still depend on it** — At CPHI Worldwide in Milan, about 40 small and mid-sized Indian pharma firms exhibiting in the Pharmexcil India pavilion said Western buyers diversifying supply chains are moving some drug-intermediate orders away from China. Clarion Organics said it has won US orders in the past year that previously went to China and now exports a decongestant intermediate to China; AllChem said it has replaced seven to eight Chinese intermediates. However, several firms stressed that India still depends heavily on Chinese raw materials and cannot yet match Chinese prices, with power tariffs the biggest competitiveness risk. — Source: [ET Pharma](https://pharma.economictimes.indiatimes.com/news/pharma-industry/sme-pharma-firms-see-shift-of-orders-from-china-cost-quality-concerns-remain/134761737)【Source: interviews with Indian pavilion companies at CPHI Worldwide 2026, 2026-10-07】
+
+**【2026-10-07】Anupam Rasayan targets pharma at one-third of revenue within three years** — The company said the completed acquisition of Bliss GVS (₹1,750 crore) adds finished-dosage and CDMO capability, creating a "KSM–intermediate–API–formulation" integration, with the United States as first priority and Europe next. Its pharma business has grown from almost nil to about ₹300 crore in five years, largely from key starting materials replacing Chinese imports. Bliss is currently running at only about 30% capacity utilisation, with headroom to 70–80%. — Source: [ET Pharma](https://pharma.economictimes.indiatimes.com/news/pharma-industry/anupam-rasayan-eyes-us-europe-pharma-push-after-bliss-deal-one-third-revenue-from-drugs/134761827)【Source: management interview at CPHI Worldwide 2026, 2026-10-07】
+
+**【2026-10-07】Over 40% of Haryana pharma units have implemented revised Schedule M** — The Haryana Pharmaceutical Manufacturers Association said more than 40% of pharma units in the state have completed implementation of the revised Schedule M (GMP), with the remainder expected within 8–10 months. The main bottlenecks are infrastructure and quality-system upgrades at older plants. — Source: [PharmaBiz](https://www.pharmabiz.com/)【Source: HPMA statement, reported 2026-10-07】
+
+## 3. Key Client Updates
+
+**【2026-10-07】GRANULES files Paragraph IV for ruxolitinib ER tablets, seeking first-to-file status** — Granules India has submitted a Paragraph IV certification with the US FDA in connection with its ANDA for ruxolitinib extended-release tablets and has issued the required notice to the relevant parties. Based on the timing and status of its ANDA, the company believes it is eligible for first-to-file status, which if confirmed could provide 180 days of US generic exclusivity (the ANDA remains under review). Ruxolitinib is a JAK1/JAK2 inhibitor marketed by Incyte as Jakafi; the extended-release version Jakafi XR was approved by the FDA in May 2026. — Source: [The Hindu BusinessLine](https://www.thehindubusinessline.com/companies/httpswwwthehindubusinesslinecomnewsgranules-india-expecting-sole-first-to-file-status-on-ruxolitinib-extended-release-tabletsarticle71555184ece/article71555184ece.ece)【Source: company announcement 2026-10-07】
+
+**【2026-10-07】SUN PHARMA board to meet on 12 October on up to ₹15,000 crore debt issue** — The company said its board will meet on 12 October to consider and approve the issuance of listed, rated, unsecured, redeemable non-convertible debentures of up to ₹15,000 crore (≈US$1.55 bn), to be issued in one or more tranches by private placement. The company had previously closed a syndication of a nearly US$12 bn, 18-month bridge loan to finance the Organon acquisition; the rupee bond issue is widely seen as partly refinancing that bridge facility. — Source: [CNBC TV18](https://www.tradingview.com/news/cnbctv:e1c531be1094b:0)【Source: company announcement 2026-10-07】
+
+## 4. Risk Alerts
+
+- **Intermediate orders shifting to India** — Impact on SINOBRIGHT: Indian suppliers are winning business on a "supply-chain independence" pitch, pressuring same-price intermediates; hold share via delivery certainty and a complete compliance documentation package.
+- **Accelerating local KSM substitution** — Impact on SINOBRIGHT: substitution of Chinese key starting materials is extending into US and Europe, raising price-comparison and switching risk at the intermediate tier; shorten quote validity.
+- **Revised Schedule M countdown** — Impact on SINOBRIGHT: clients will complete GMP upgrades within 8–10 months, lifting supplier audit and documentation requirements; slow responses will jeopardise first-supplier status.
+- **Rupee and buyer payment terms** — Impact on SINOBRIGHT: at 1 USD ≈ ₹96.75 clients' import costs stay high, sustaining pressure on price, longer credit and hedging requests; tighten quote validity and settlement currency.
+
+## 5. SINOBRIGHT Opportunity Notes
+
+- **SME sourcing gap** — SINOBRIGHT action: approach the ~40 Indian SME exhibitors at CPHI with small-batch, fast-lead-time intermediate quotes.
+- **First-to-file development volumes** — SINOBRIGHT action: track Granules' ruxolitinib ER development volumes and quote starting materials and intermediates before Q4.
+- **Integration-phase raw material demand** — SINOBRIGHT action: after the 12 October board approval, pursue raw material enquiries for Organon products under review.
