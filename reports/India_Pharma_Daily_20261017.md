@@ -1,0 +1,42 @@
+India Pharma Daily | 2026-10-17
+> As of 2026-10-17 07:30, 1 USD ≈ ₹94.92
+
+> 🎧 **Audio edition** (Chinese male voice · full-text narration) — [🔊 Listen now](https://songjen.github.io/india-pharma-report/audio/india_daily_20261017.mp3)
+
+<audio controls preload="none" style="width:100%" src="https://songjen.github.io/india-pharma-report/audio/india_daily_20261017.mp3"></audio>
+
+## 1. Government Pharma Policy
+
+**【2026-10-16】DGTR extends deadline for PUC/PCN comments in the anti-dumping case on 6-APA originating in China and the EU (update)** — India's Directorate General of Trade Remedies issued an extension notice in the anti-dumping investigation into 6-Amino Penicillanic Acid (6-APA, HS 29411050) originating in or exported from the People's Republic of China and the European Union, postponing the deadline for interested parties to file comments on the Product Under Consideration (PUC) and Product Control Numbers (PCNs). The case was initiated on 2026-09-25 on the application of domestic producer Qule Pharma; the period of investigation is 2025-04-01 to 2026-03-31. — Source: [DGTR case page](https://www.dgtr.gov.in/en/anti-dumping-cases/anti-dumping-investigation-concerning-imports-6-amino-penicillanic-acid-6-apa)【Source: DGTR File No. 6/58/2026-DGTR, SETU Case ID AD/OI/059/2026, extension notice 2026-10-16】
+
+**【2026-10-15】Pharmexcil seeks details of export consignments under the India–New Zealand FTA ahead of a 20 October flag-off** — The Pharmaceuticals Export Promotion Council of India issued a circular inviting member companies to submit details of pharmaceutical export consignments scheduled for shipment on 19–20 October 2026 to coincide with the flag-off ceremony under the India–New Zealand Free Trade Agreement, covering medicines, APIs and medical devices. — Source: [Pharmexcil](https://pharmexcil.com/circulars/request-for-details-of-export-consignments-scheduled-for-19-and-20-october-2026-%E2%80%93-india%E2%80%93new-zealand-free-trade-agreement--fta-/16020/3e1baac0f2ee4247e492f5c4892ba609.html)【Source: Pharmexcil circular 2026-10-15】
+
+**【2026-10-12】PIB: TDB-DST signs ₹86 crore RDI support agreement with Peptris** — The Technology Development Board of India's Department of Science & Technology signed an agreement with Bengaluru-based Peptris Technologies, providing ₹86 crore through the Research Development and Innovation (RDI) Fund (total project cost ₹172 crore) via optionally convertible debt to advance four AI-discovered drug candidates from Technology Readiness Level 4 to Level 6 through preclinical development and clinical readiness. — Source: [PIB](https://pib.gov.in/PressReleaseIframePage.aspx?PRID=2322077)【Source: PIB PRID 2322077, 2026-10-12】
+
+## 2. Pharma Industry News
+
+**【2026-10-15】India's pharmaceutical market grows 17.1% year-on-year in September, the strongest monthly growth in three years** — According to an Equirus Securities sector report, the Indian Pharmaceutical Market (IPM) posted September sales of about ₹253 billion, up 17.1% year-on-year (August 2026: +13.1%; September 2025: +6.6%), with volume growth of 5.4%, the strongest monthly reading since October 2023; 2QFY27 sales reached ₹746.1 billion, up 14.7% year-on-year. All ten tracked companies recorded double-digit growth for a sixth consecutive month, led by Zydus (+19.7%), Torrent (+18.9%) and Sun Pharma (+17.6%). Respiratory was the sole exception at +3.1%, while anti-infectives recovered to +9.3%. — Source: [Express Pharma](https://www.expresspharma.in/indian-pharmaceutical-market-records-17-1-growth-in-september-equirus-securities/)【Source: Equirus Securities healthcare & pharmaceuticals sector report 2026-10-14】
+
+**【2026-10-16】Mankind Pharma to acquire 70% of Belgium's ACTx for €48 million, entering CAR-T cell therapy** — Mankind Pharma will acquire a 70% stake in Belgium-based Armed Cell Therapeutics (ACTx) for about €48 million (approximately ₹511 crore) through a wholly owned Netherlands subsidiary, marking a push into next-generation oncology cell therapy. ACTx is developing armed CAR-T therapies targeting non-Hodgkin lymphoma and small cell lung cancer and is exploring in vivo CAR-T approaches. — Source: [Indian Pharma Post](https://www.indianpharmapost.com/biopharma/mankind-pharma-to-acquire-70-stake-in-armed-cell-therapeutics-for-48-million-22169)【Source: company announcement 2026-10-16】
+
+**【2026-10-16】Indian API maker Wanbury receives nine "no DMF deficiency" letters from USFDA; metformin business expands in Saudi Arabia and Mexico** — Wanbury disclosed that between July and August 2026 it received nine "no DMF deficiency" letters from the US FDA for its metformin hydrochloride Drug Master File, issued in the course of its customers' ANDA reviews, along with equivalent letters for two further APIs, paroxetine and diphenhydramine HCl. The company has commercialised a metformin DC business in Saudi Arabia with annual revenue potential of about ₹10 crore, and its Mexican customer has won a two-year metformin supply tender worth approximately ₹15 crore per year. — Source: [BazaarWatch](https://bazaarwatch.com/announcement/222634/wanbury-limited-press-release)【Source: company announcement 2026-10-16】
+
+## 3. Key Client Updates
+
+**【2026-10-16】GRANULES INDIA guides to about ₹2,000 crore capex over 3–4 years; peptide CDMO targeted at about US$50 million revenue within three years** — On its Q2 FY27 earnings call the company cited four growth engines: controlled substances, complex generics, oncology and peptide CDMO. Management targets an approximately US$50 million annual revenue run-rate for the peptide business within three years, rising above US$100 million within five years, and plans to raise US annual ANDA filings from 6–10 to 10–15, with higher contributions from Europe and Latin America by FY30. — Source: [Arthneeti](https://www.arthneeti.com/insights/granules-india-ltd-q2-fy27-earnings)【Source: company Q2 FY27 earnings-call transcript, updated 2026-10-16】
+
+**【2026-10-15】SUN PHARMA sets Q2 FY27 results and earnings call for 30 October** — The company announced it will release results for the quarter ended 30 September 2026 on 30 October 2026, and will host a one-hour earnings call at 06.30 pm IST the same day. — Source: [Sun Pharma](https://sunpharma.com/wp-content/uploads/2026/10/Press-Release-Sun-Pharma-Q2FY27-financial-results-on-Oct-30-2026.pdf)【Source: company announcement 2026-10-15】
+
+**【2026-10-13】ZYDUS signs Sri Lanka joint-venture agreement, investing over US$20 million in a formulations plant** — Zydus Sunshine Lifesciences, the joint venture between Zydus Lifesciences and Sunshine Healthcare, signed an agreement with the Board of Investment of Sri Lanka to build a pharmaceutical plant in the Horana investment zone, with a phased investment of more than US$20 million on a site of nearly four acres; the first phase will produce oral solid dosage forms for the Sri Lankan market, with commercial operations expected in 2028. — Source: [Medical Dialogues](https://medicaldialogues.in/amp/news/industry/pharma/zydus-sunshine-lifesciences-to-invest-over-usd-20-million-in-sri-lanka-pharma-manufacturing-facility-181360)【Source: company announcement 2026-10-13】
+
+## 4. Risk Alerts
+
+- **Extended proceedings in the 6-APA case** — Impact on SINOBRIGHT: the extended comment deadline means the China-related 6-APA case continues, so quotations for penicillin-class intermediates to India should carry duty and supply-switch clauses.
+- **Rising domestic capacity and MIP lobbying** — Impact on SINOBRIGHT: PLI-backed capacity such as Penicillin G is ramping up while calls to extend the MIP grow, raising customers' substitution intent; retain share through compliant documentation and uninterrupted supply.
+- **Rupee firms to 94.9** — Impact on SINOBRIGHT: a sixth straight session of rupee strength lowers customers' import costs and lifts pressure for price cuts; shorten quotation validity and agree the settlement currency upfront.
+
+## 5. SINOBRIGHT Opportunity Notes
+
+- **6-APA comment window** — SINOBRIGHT action: use the window opened by the 10-16 extension to align product-scope definitions with customers and lock penicillin-class intermediate quotes.
+- **Peptide CDMO supply fit** — SINOBRIGHT action: engage Granules on its peptide CDMO ramp-up and ₹2,000 crore capex; quote protected amino acids and starting materials in Q4.
+- **Settlement and pricing window** — SINOBRIGHT action: use rupee volatility around 95 to negotiate RMB settlement and tiered pricing in exchange for longer-term volumes.
