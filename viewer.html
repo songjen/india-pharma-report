@@ -165,6 +165,8 @@
 
   // 根据文件名前缀识别国家/语言，显示对应标题
   function detectTitle(fname) {
+    var uscn = fname.match(/^美国对华合规与医药监管日报_(\d{8})\.md$/);
+    if (uscn) return { label: "美国对华合规与医药监管日报", date: uscn[1] };
     var cn = fname.match(/^([\u4e00-\u9fa5]+)医药日报_(\d{8})\.md$/);
     if (cn) return { label: cn[1] + "医药日报", date: cn[2] };
     var ru = fname.match(/^Russia_Pharma_Daily_(\d{8})\.md$/);

@@ -208,6 +208,7 @@
         <option value="india">🇮🇳 India</option>
         <option value="russia">🇷🇺 Russia</option>
         <option value="brazil">🇧🇷 Brazil</option>
+        <option value="uscn">🇺🇸 US–China Compliance</option>
       </select>
     </div>
     <h1 id="mainTitle">🇮🇳 India Pharma Daily<span class="zh" id="mainTitleZh">印度医药日报</span></h1>
@@ -308,6 +309,20 @@
         "JA SAUDE ANIMAL","SANOFI MEDLEY","VIRBAC DO BRASIL","ANTIBIOTICOS DO BRASIL","SM EMPREENDIMENTOS",
         "IPANEMA","ALAMAR"
       ]
+    },
+    uscn: {
+      flag: "🇺🇸",
+      title: "US–China Compliance & Pharma Regulatory Daily",
+      titleZh: "美国对华合规与医药监管日报",
+      filePattern: /美国对华合规与医药监管日报_(\d{8})\.md$/,
+      sub: '(1) China compliance & sanctions (DHS/UFLPA / CBP / BIS / DoD 1260H / OFAC / FinCEN / DOJ / White House / Congress / OMB) · (2) AD-CVD, tariffs & Section 337 (USTR / ITA / USITC / CBP) · (3) US pharma regulation (FDA incl. warning letters & import alerts / NIH / CDC / HHS) · (4) EU track (EMA / DG SANTE · Critical Medicines Alliance)<br>Auto-generated daily at 08:50 · Pharma-related notices only · Source link on every item · Chinese edition',
+      clientsTitle: "Monitored Agencies",
+      clients: [
+        "DHS·UFLPA","CBP","BIS","DoD·1260H","OFAC","FinCEN",
+        "DOJ","White House","Congress","OMB","USTR","ITA",
+        "USITC","FDA","NIH","CDC","HHS","EMA",
+        "DG SANTE·CMA"
+      ]
     }
   };
 
@@ -339,7 +354,7 @@
   function renderHeader(cfg) {
     mainTitle.innerHTML = cfg.flag + " " + cfg.title + '<span class="zh">' + cfg.titleZh + '</span>';
     mainSub.innerHTML = cfg.sub;
-    clientsTitle.textContent = "🎯 Key Clients Tracked (" + cfg.clients.length + ")";
+    clientsTitle.textContent = "🎯 " + (cfg.clientsTitle || "Key Clients Tracked") + " (" + cfg.clients.length + ")";
     clientsTags.innerHTML = "";
     cfg.clients.forEach(function (c) {
       var s = document.createElement("span");

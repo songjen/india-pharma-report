@@ -208,6 +208,7 @@
         <option value="india">🇮🇳 印度</option>
         <option value="russia">🇷🇺 俄罗斯</option>
         <option value="brazil">🇧🇷 巴西</option>
+        <option value="uscn">🇺🇸 美国对华合规</option>
       </select>
     </div>
     <h1 id="mainTitle">🇮🇳 印度医药日报<span class="en" id="mainTitleEn">India Pharma Daily</span></h1>
@@ -308,6 +309,20 @@
         "JA SAUDE ANIMAL","SANOFI MEDLEY","VIRBAC DO BRASIL","ANTIBIOTICOS DO BRASIL","SM EMPREENDIMENTOS",
         "IPANEMA","ALAMAR"
       ]
+    },
+    uscn: {
+      flag: "🇺🇸",
+      title: "美国对华合规与医药监管日报",
+      titleEn: "US–China Compliance & Pharma Regulatory Daily",
+      filePattern: /美国对华合规与医药监管日报_(\d{8})\.md$/,
+      sub: '① 对华合规/制裁（DHS·UFLPA / CBP / BIS / DoD 1260H / OFAC / FinCEN / DOJ / 白宫 / 国会 / OMB）· ② 双反·关税·337（USTR / ITA / USITC / CBP）· ③ 美国医药监管（FDA 含警告信与进口警报 / NIH / CDC / HHS）· ④ 欧盟板块（EMA / DG SANTE·关键药物联盟 CMA）<br>每日 08:50 自动生成 · 仅保留医药企业（药品/API/生物医药/CDMO-CXO/器械）相关公告 · 每条附原文链接',
+      clientsTitle: "重点监测机构",
+      clients: [
+        "DHS·UFLPA","CBP","BIS","DoD·1260H","OFAC","FinCEN",
+        "DOJ","白宫","国会","OMB","USTR","ITA",
+        "USITC","FDA","NIH","CDC","HHS","EMA",
+        "DG SANTE·CMA"
+      ]
     }
   };
 
@@ -341,7 +356,7 @@
   function renderHeader(cfg) {
     mainTitle.innerHTML = cfg.flag + " " + cfg.title + '<span class="en">' + cfg.titleEn + '</span>';
     mainSub.innerHTML = cfg.sub;
-    clientsTitle.textContent = "🎯 重点追踪客户（" + cfg.clients.length + " 家）";
+    clientsTitle.textContent = "🎯 " + (cfg.clientsTitle || "重点追踪客户") + "（" + cfg.clients.length + " 家）";
     clientsTags.innerHTML = "";
     cfg.clients.forEach(function (c) {
       var s = document.createElement("span");
