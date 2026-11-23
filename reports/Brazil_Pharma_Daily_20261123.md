@@ -1,0 +1,52 @@
+Diário Farmacêutico Brasil | 2026-11-23
+> À taxa de câmbio em tempo real de 2026-11-23 09:12, 1 USD ≈ R$5,94
+
+> 🎧 **Versão em áudio** (voz masculina em chinês · narração integral) — [🔊 Ouça agora](https://songjen.github.io/india-pharma-report/audio/brazil_daily_20261123.mp3)
+
+<audio controls preload="none" style="width:100%" src="https://songjen.github.io/india-pharma-report/audio/brazil_daily_20261123.mp3"></audio>
+
+## 1. Política Farmacêutica Governamental
+
+**【2026-11-22】Anvisa avalia proibir clínicas de venderem ou aplicarem canetas emagrecedoras manipuladas; votação na diretoria marcada para 25 de novembro, com veto também a estoques em clínicas, produção antecipada e marketing a médicos** — A proposta é do diretor Thiago Campos, cuja análise estava paralisada desde maio por pedido de vista. O texto proíbe o fornecimento a "clínicas, consultórios médicos, estabelecimentos assistenciais ou quaisquer terceiros" para manutenção de estoque, aplicação ou revenda; o paciente deverá apresentar receita individualizada diretamente à farmácia. Outro ponto central: a análise da matéria-prima importada passaria ao INCQS (Fiocruz), com amostra de 3 a 5 gramas e exigência de Certificado de Boas Práticas de Fabricação — os fornecedores são, em geral, laboratórios chineses. Em maio, Anvisa e Polícia Federal divulgaram nota conjunta sobre volume de doses manipuladas incompatível com as regras. **Relevância para a SINOBRIGHT**: é a primeira vez que a ponta da matéria-prima entra na cadeia de fiscalização dos emagrecedores manipulados; CBPF e análise lote a lote passam a ser pré-requisitos, e o prazo de entrega de fornecedores chineses precisa de margem superior a 30 dias. Fonte: [Folha de S.Paulo](https://www1.folha.uol.com.br/equilibrioesaude/2026/11/anvisa-avalia-proibir-clinicas-de-aplicarem-canetas-emagrecedoras-de-farmacias-de-manipulacao.shtml)【Base: pauta da diretoria da Anvisa de 2026-11-25; nota conjunta Anvisa–PF de maio】
+
+**【2026-11-20】MDIC abre consulta pública de 15 dias sobre a regulamentação de salvaguardas bilaterais, com aplicação explícita ao acordo Mercosul–União Europeia** — Aberta pela SECEX em 19 de novembro, dá continuidade ao Decreto nº 12.866, de 4 de março de 2026. A minuta disciplina petições, procedimentos de investigação, produção de provas, medidas provisórias e definitivas e revisões, mantendo as competências do DECOM e da CAMEX. **Relevância para a SINOBRIGHT**: a salvaguarda bilateral exige apenas aumento expressivo de importações beneficiadas por preferência tarifária que cause ou ameace prejuízo, o que a torna mais acionável que o antidumping. Com o acordo Mercosul–UE, produtos dos capítulos 29 e 30 podem ser enquadrados. A consulta se encerra por volta de 4 de dezembro. Fonte: [MDIC](https://www.gov.br/mdic/pt-br/assuntos/noticias/2026/novembro/mdic-abre-consulta-publica-sobre-regulamentacao-de-salvaguardas-bilaterais)【Base: Decreto nº 12.866/2026 (2026-03-04); consulta pública SECEX de 2026-11-19, DOU de 2026-11-19, página 1】
+
+## 2. Notícias da Indústria Farmacêutica
+
+**【2026-11-19】IQVIA: e-commerce já responde por 27,7% do varejo farmacêutico, com R$ 9,9 bilhões (cerca de US$ 1,67 bilhão) e 165,3 milhões de unidades no 3T26; penetração online dos GLP-1 chega a 61,1%, contra 31,2% dos prescritos em geral** — Os prescritos somam 31,2% e Consumer Health 23,4%. Crescimento por cesta: prescritos +44,6%, Patient Care +35%, Nutrition +33,2%, OTC +26,5%, Personal Care +21,5%. Entre os prescritos sem GLP-1, a penetração online é de apenas 23,3% — ou seja, os GLP-1 explicam quase toda a diferença. As dez maiores corporações do e-commerce farma no trimestre foram Lilly, EMS, Eurofarma, Novo Nordisk, Hypera, P&G, Aché, L'Oréal, Sanofi e Kimberly. **Relevância para a SINOBRIGHT**: os GLP-1 são a única classe prescrita com canal predominantemente digital, o que transforma logística e cadeia fria em barreira para fornecedores; cinco das dez maiores são laboratórios nacionais, cuja demanda por peptídeos e semaglutida seguirá crescendo. Fonte: [Panorama Farmacêutico](https://panoramafarmaceutico.com.br/e-commerce-responde-por-277-da-receita-das-farmacias/)【Base: IQVIA Consumer Health, dados do 3T26; pesquisa GS1 Brasil com 4 mil consumidores】
+
+**【2026-11-20】Pacientes de cannabis medicinal passam de 1,1 milhão no Brasil, com alta de 2,6 vezes em dois anos; 41% dependem de importação e 37% compram em farmácias, com o menor preço por mg no importado (R$ 0,26)** — Anuário da Kaya Mind (5ª edição): eram 430 mil em 2023 e 873 mil em 2025. Acesso: importação 457 mil (41%), farmácias e drogarias 406 mil (37%), associações 248 mil (22%), além de mais de 10 mil por habeas corpus. Preços por frasco: farmácia R$ 650, importado R$ 556, associação R$ 352. Hoje 18 empresas vendem em drogarias, com 67 mil frascos por mês, e 58 pedidos aguardam liberação da Anvisa (análise de quase um ano). O poder público destinou R$ 832,8 milhões entre 2015 e o 1º semestre de 2026, 91% pelos estados. Prescrições de importados por clínicos gerais subiram de 35,6% para 68,9%. **Relevância para a SINOBRIGHT**: a importação ainda responde por quatro de cada dez pacientes e tem o menor preço, o que indica capacidade local insuficiente; os 58 pedidos pendentes sinalizam substituição local acelerada a partir de 2027. Fonte: [Agência Brasil](https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/total-de-pacientes-canabicos-passa-de-1-milhao-no-brasil)【Base: Kaya Mind, Anuário da Cannabis Medicinal, 5ª edição, publicado em 2026-11-20; resolução Anvisa de janeiro de 2026】
+
+**【2026-11-19】Mercado de medicamentos cardiovasculares deve alcançar US$ 201 bilhões até 2032, com CAGR de 3,31%, e as farmácias ganham peso como canal** — O ritmo é inferior ao dos GLP-1 e da oncologia, mas a base é ampla e o portfólio é dominado por genéricos maduros; o estudo aponta ainda avanço da participação das farmácias acompanhando a gestão de doenças crônicas. **Relevância para a SINOBRIGHT**: estatinas, sartanas e ARBs estão entre as classes em que fabricantes chineses têm vantagem tradicional; crescimento estável favorece a estratégia de volume com contratos longos. Fonte: [Guia da Farmácia](https://guiadafarmacia.com.br/medicamentos-cardiovasculares-crescimento/)【Base: relatório de mercado de terceiros, publicado em 2026-11-19】
+
+**【2026-11-19】Anvisa adia webinar sobre a proposta de Sandbox Regulatório, previsto para 23 de novembro; nova data será divulgada** — A agência não informou o motivo. O sandbox é o canal de teste controlado para produtos inovadores (saúde digital, produtos combinados, novos sistemas de liberação). **Relevância para a SINOBRIGHT**: se aprovado, pode abrir caminho acelerado para canetas injetoras e implantes de longa duração, criando nova interface regulatória para fornecedores de IFA e de dispositivos. Fonte: [Anvisa](https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2026/anvisa-adia-webinar-sobre-proposta-de-sandbox-regulatorio)【Base: comunicado Anvisa de 2026-11-19, 20h42】
+
+**【2026-11-19】Ministério da Saúde lança guia de avaliação de dispositivos médicos implantáveis (250 páginas, 13 capítulos) e celebra os 15 anos da Conitec** — Lançado no Congresso da Rebrats (17 de novembro), o guia oferece parâmetros clínicos, regulatórios e econômicos para a Subcomissão Técnica de Avaliação de Produtos e Procedimentos da Conitec, com foco em cardiologia, neurologia e oftalmologia. **Relevância para a SINOBRIGHT**: as trilhas de incorporação de dispositivos e de medicamentos estão se separando; o fornecimento de IFA puro não é afetado diretamente, mas a barreira para dispositivos combinados com fármaco (stents farmacológicos, canetas pré-preenchidas) sobe. Fonte: [Ministério da Saúde](https://www.gov.br/saude/pt-br/assuntos/noticias/ministerio-da-saude-lanca-guia-para-avaliacao-de-dispositivos-medicos-implantaveis-no-sus)【Base: comunicado do Ministério da Saúde de 2026-11-19, 11h55; Conitec criada em 2011】
+
+## 3. Atualizações de Clientes-Chave
+
+**【2026-11-20】Teuto tem 17 medicamentos reconhecidos como referência pela Anvisa, incluindo injetáveis antibióticos como amicacina e ampicilina; publicação no site em 18 de novembro e único item material novo do mês** — A revisão semanal das áreas de Releases e Comunicados do site confirmou o reconhecimento dos 17 produtos (já registrado na edição de 19/11) como item mais recente; em Comunicados, o último é o aviso SIMBEVA (bevacizumabe), de 13 de novembro. **Relevância para a SINOBRIGHT**: o status de referência exige que o IFA tenha perfil de impurezas e pacote de estabilidade completos; a linha de injetáveis beta-lactâmicos da Teuto segue sendo um cliente em que se entra por dossiê, não por preço. Fonte: [Laboratório Teuto](https://www.teuto.com.br/laboratorio-teuto-tem-17-medicamentos-reconhecidos-como-referencia-pela-anvisa/)【Base: comunicado oficial da Teuto de 2026-11-18; reconhecimento de medicamentos de referência pela Anvisa】
+
+## 4. Alertas de Risco
+
+**Fiscalização na ponta da matéria-prima dos manipulados** — análise pelo INCQS e CBPF obrigatório. O calendário de registro e entrega de laboratórios chineses precisa ser refeito.
+
+**Salvaguarda bilateral é mais acionável que antidumping** — consulta de 15 dias. Recomenda-se monitoramento semanal dos capítulos 29 e 30.
+
+**Penetração online dos GLP-1 em 61,1%** — cadeia fria e prazo de entrega passam a ser condições de acesso; preço deixa de ser a única variável.
+
+**Importação responde por 41% da cannabis medicinal** — 58 pedidos locais pendentes. A janela de importação pode se fechar após 2027.
+
+**Câmbio** — USD/BRL em 5,94, alta de 0,8% frente aos 5,89 de 20/11 e cerca de 18,1% acima do início de outubro (5,03). Recomenda-se travar câmbio em pedidos de curto prazo.
+
+## 5. Agenda de Amanhã
+
+**Votação na diretoria da Anvisa em 25 de novembro sobre manipulados emagrecedores** — o resultado define a existência ou não dessa via e é o principal marco regulatório do mês.
+
+**Duas trilhas de incorporação** — acompanhar o critério da Conitec para dispositivos combinados com fármaco.
+
+**Consulta do MDIC termina em 4 de dezembro** — verificar se entidades setoriais enviarão contribuições sobre os capítulos 29 e 30.
+
+**Calendário regulatório** — 79ª CAT em 03/12, 76ª CDC em 08/12, 244ª Gecex em 16/12; as resoluções Gecex 985, 986 e 982 não tratam de NCM farmacêuticos.
+
+**Lista de substâncias do Edital Anvisa 8/2026** — não obtida desde 08/11; segue sendo a única variável para saber se a avaliação independente da DIFA abrangerá penicilânicos e hormônios esteroides.
